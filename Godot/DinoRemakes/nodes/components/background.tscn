@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=3 uid="uid://bvnmi41nopujl"]
+
+[ext_resource type="Texture2D" uid="uid://kyhggjm3ckwh" path="res://assets/sprites/sky_1.png" id="1_pm77f"]
+[ext_resource type="Script" path="res://sources/Scripts/AutoParallax.cs" id="2_b1nc0"]
+[ext_resource type="Texture2D" uid="uid://cguu3ewt6wc8s" path="res://assets/sprites/clouds1.png" id="3_fa6bn"]
+[ext_resource type="Texture2D" uid="uid://d3pogke083l4m" path="res://assets/sprites/hills_1.png" id="4_y7wpu"]
+[ext_resource type="Texture2D" uid="uid://lalblph6a04d" path="res://assets/sprites/cloud_1.png" id="5_0oipm"]
+[ext_resource type="Texture2D" uid="uid://biayftkdg40jd" path="res://assets/sprites/cloud_2.png" id="6_bmcfp"]
+[ext_resource type="Texture2D" uid="uid://5aumac1cfkxs" path="res://assets/sprites/cloud_3.png" id="7_hcevt"]
+[ext_resource type="Texture2D" uid="uid://cx0pj4j7n0rw2" path="res://assets/sprites/cloud_4.png" id="8_vlyso"]
+[ext_resource type="Texture2D" uid="uid://o0ufm7jmpfg4" path="res://assets/sprites/cloud_5.png" id="9_cjb0g"]
+
+[node name="Background" type="Node"]
+
+[node name="Sky1" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_pm77f")
+
+[node name="CloudParallax" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-40, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("2_b1nc0")
+
+[node name="Clouds1" type="Sprite2D" parent="CloudParallax"]
+position = Vector2(0, -10)
+scale = Vector2(2, 2)
+texture = ExtResource("3_fa6bn")
+
+[node name="HillParallax" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-120, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("2_b1nc0")
+
+[node name="Hills1" type="Sprite2D" parent="HillParallax"]
+position = Vector2(0, 175)
+scale = Vector2(2, 2)
+texture = ExtResource("4_y7wpu")
+
+[node name="CloudParallax1" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-60, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Cloud1" type="Sprite2D" parent="CloudParallax1"]
+position = Vector2(-626, -412)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("5_0oipm")
+
+[node name="CloudParallax2" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-35, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Cloud2" type="Sprite2D" parent="CloudParallax2"]
+position = Vector2(1910, -453)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("6_bmcfp")
+
+[node name="CloudParallax3" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-50, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Cloud3" type="Sprite2D" parent="CloudParallax3"]
+position = Vector2(110, -506)
+scale = Vector2(1.4, 1.4)
+texture = ExtResource("7_hcevt")
+
+[node name="CloudParallax4" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-70, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Cloud4" type="Sprite2D" parent="CloudParallax4"]
+position = Vector2(752, -307)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_vlyso")
+
+[node name="CloudParallax5" type="Parallax2D" parent="."]
+repeat_size = Vector2(2002, 0)
+autoscroll = Vector2(-55, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+
+[node name="Cloud5" type="Sprite2D" parent="CloudParallax5"]
+position = Vector2(1437, -293)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("9_cjb0g")

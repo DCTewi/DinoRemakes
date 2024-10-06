@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://jh4t22lbgjpe"]
+
+[ext_resource type="Script" path="res://sources/Scripts/Player.cs" id="1_klukt"]
+[ext_resource type="Texture2D" uid="uid://butw1xp0nkg6f" path="res://assets/sprites/robot_drive1.png" id="1_rko1v"]
+[ext_resource type="Texture2D" uid="uid://b4eyru463umch" path="res://assets/sprites/robot_drive2.png" id="2_klukt"]
+[ext_resource type="Texture2D" uid="uid://dwf5y4m7kri5e" path="res://assets/sprites/robot_jump1.png" id="3_cpumw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d281o"]
+size = Vector2(156, 118)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d281o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rko1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_klukt")
+}],
+"loop": true,
+"name": &"drive",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cpumw")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}]
+
+[node name="Player" type="RigidBody2D"]
+script = ExtResource("1_klukt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_d281o")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+z_index = 10
+sprite_frames = SubResource("SpriteFrames_d281o")
+animation = &"drive"
+autoplay = "drive"

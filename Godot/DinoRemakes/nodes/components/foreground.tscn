@@ -1,0 +1,108 @@
+[gd_scene load_steps=22 format=4 uid="uid://cspl5lvjg1bop"]
+
+[ext_resource type="Script" path="res://sources/Scripts/AutoParallax.cs" id="1_15m4a"]
+[ext_resource type="Texture2D" uid="uid://bs8i04f8s6qnj" path="res://assets/sprites/tile_dirt_1.png" id="2_leoym"]
+[ext_resource type="Texture2D" uid="uid://c4o3xns5kdjdq" path="res://assets/sprites/tile_dirt_2.png" id="3_s4kpj"]
+[ext_resource type="Texture2D" uid="uid://osgydbhclwbp" path="res://assets/sprites/tile_dirt_3.png" id="4_sbffx"]
+[ext_resource type="Texture2D" uid="uid://ce1b8w1enry24" path="res://assets/sprites/tile_dirt_4.png" id="5_1sqhq"]
+[ext_resource type="Texture2D" uid="uid://bhypru2b6h1sj" path="res://assets/sprites/tile_dirt_5.png" id="6_p5sjy"]
+[ext_resource type="Texture2D" uid="uid://dwgofuqoiox5s" path="res://assets/sprites/tile_dirt_6.png" id="7_gs3pd"]
+[ext_resource type="Texture2D" uid="uid://cgpcnkyxx1207" path="res://assets/sprites/grass_1.png" id="8_5sqvh"]
+[ext_resource type="Texture2D" uid="uid://taotuuhwi46o" path="res://assets/sprites/grass_2.png" id="9_4jchm"]
+[ext_resource type="Texture2D" uid="uid://c36u8r8cx0d5r" path="res://assets/sprites/grass_3.png" id="10_k52ao"]
+[ext_resource type="Texture2D" uid="uid://dds7hexfmaqoe" path="res://assets/sprites/grass_4.png" id="11_imo0d"]
+[ext_resource type="Texture2D" uid="uid://dg3pjsac7ljei" path="res://assets/sprites/grass_5.png" id="12_76xgg"]
+[ext_resource type="Texture2D" uid="uid://cgwx6sgx4rxj0" path="res://assets/sprites/grass_6.png" id="13_07ay4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wpqy7"]
+texture = ExtResource("2_leoym")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fdshk"]
+texture = ExtResource("3_s4kpj")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p4spm"]
+texture = ExtResource("4_sbffx")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d14wj"]
+texture = ExtResource("5_1sqhq")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qtgtv"]
+texture = ExtResource("6_p5sjy")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d281o"]
+texture = ExtResource("7_gs3pd")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dlcaf"]
+tile_size = Vector2i(70, 70)
+sources/0 = SubResource("TileSetAtlasSource_wpqy7")
+sources/1 = SubResource("TileSetAtlasSource_fdshk")
+sources/2 = SubResource("TileSetAtlasSource_p4spm")
+sources/3 = SubResource("TileSetAtlasSource_d14wj")
+sources/4 = SubResource("TileSetAtlasSource_qtgtv")
+sources/5 = SubResource("TileSetAtlasSource_d281o")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4spm"]
+size = Vector2(2200, 620)
+
+[node name="Foreground" type="Node"]
+
+[node name="GroundParallax" type="Parallax2D" parent="."]
+repeat_size = Vector2(2100, 0)
+autoscroll = Vector2(-640, 0)
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("1_15m4a")
+
+[node name="GroundTileLayer" type="TileMapLayer" parent="GroundParallax"]
+z_index = 5
+scale = Vector2(1.5, 1.5)
+tile_map_data = PackedByteArray("AAD//wMAAgAAAAAAAAD+/wMAAgAAAAAAAAD8/wMAAgAAAAAAAAD9/wMAAgAAAAAAAAD7/wMAAgAAAAAAAAD6/wMAAgAAAAAAAAD5/wMAAgAAAAAAAAD4/wMAAgAAAAAAAAD3/wMAAgAAAAAAAAD2/wMAAgAAAAAAAAAAAAMAAgAAAAAAAAABAAMAAgAAAAAAAAACAAMAAgAAAAAAAAADAAMAAgAAAAAAAAAEAAMAAgAAAAAAAAAFAAMAAgAAAAAAAAAGAAMAAgAAAAAAAAAHAAMAAgAAAAAAAAAIAAMAAgAAAAAAAAAJAAMAAgAAAAAAAAD2/wQABQAAAAAAAAD2/wUABQAAAAAAAAD2/wYABQAAAAAAAAD2/wcABQAAAAAAAAD2/wgABQAAAAAAAAD3/wQABQAAAAAAAAD3/wUABQAAAAAAAAD3/wYABQAAAAAAAAD3/wcABQAAAAAAAAD3/wgABQAAAAAAAAD4/wQABQAAAAAAAAD4/wUABQAAAAAAAAD4/wYABQAAAAAAAAD4/wcABQAAAAAAAAD4/wgABQAAAAAAAAD5/wQABQAAAAAAAAD5/wUABQAAAAAAAAD5/wYABQAAAAAAAAD5/wcABQAAAAAAAAD5/wgABQAAAAAAAAD6/wQABQAAAAAAAAD6/wUABQAAAAAAAAD6/wYABQAAAAAAAAD6/wcABQAAAAAAAAD6/wgABQAAAAAAAAD7/wQABQAAAAAAAAD7/wUABQAAAAAAAAD7/wYABQAAAAAAAAD7/wcABQAAAAAAAAD7/wgABQAAAAAAAAD8/wQABQAAAAAAAAD8/wUABQAAAAAAAAD8/wYABQAAAAAAAAD8/wcABQAAAAAAAAD8/wgABQAAAAAAAAD9/wQABQAAAAAAAAD9/wUABQAAAAAAAAD9/wYABQAAAAAAAAD9/wcABQAAAAAAAAD9/wgABQAAAAAAAAD+/wQABQAAAAAAAAD+/wUABQAAAAAAAAD+/wYABQAAAAAAAAD+/wcABQAAAAAAAAD+/wgABQAAAAAAAAD//wQABQAAAAAAAAD//wUABQAAAAAAAAD//wYABQAAAAAAAAD//wcABQAAAAAAAAD//wgABQAAAAAAAAAAAAQABQAAAAAAAAAAAAUABQAAAAAAAAAAAAYABQAAAAAAAAAAAAcABQAAAAAAAAAAAAgABQAAAAAAAAABAAQABQAAAAAAAAABAAUABQAAAAAAAAABAAYABQAAAAAAAAABAAcABQAAAAAAAAABAAgABQAAAAAAAAACAAQABQAAAAAAAAACAAUABQAAAAAAAAACAAYABQAAAAAAAAACAAcABQAAAAAAAAACAAgABQAAAAAAAAADAAQABQAAAAAAAAADAAUABQAAAAAAAAADAAYABQAAAAAAAAADAAcABQAAAAAAAAADAAgABQAAAAAAAAAEAAQABQAAAAAAAAAEAAUABQAAAAAAAAAEAAYABQAAAAAAAAAEAAcABQAAAAAAAAAEAAgABQAAAAAAAAAFAAQABQAAAAAAAAAFAAUABQAAAAAAAAAFAAYABQAAAAAAAAAFAAcABQAAAAAAAAAFAAgABQAAAAAAAAAGAAQABQAAAAAAAAAGAAUABQAAAAAAAAAGAAYABQAAAAAAAAAGAAcABQAAAAAAAAAGAAgABQAAAAAAAAAHAAQABQAAAAAAAAAHAAUABQAAAAAAAAAHAAYABQAAAAAAAAAHAAcABQAAAAAAAAAHAAgABQAAAAAAAAAIAAQABQAAAAAAAAAIAAUABQAAAAAAAAAIAAYABQAAAAAAAAAIAAcABQAAAAAAAAAIAAgABQAAAAAAAAAJAAQABQAAAAAAAAAJAAUABQAAAAAAAAAJAAYABQAAAAAAAAAJAAcABQAAAAAAAAAJAAgABQAAAAAAAAA=")
+tile_set = SubResource("TileSet_dlcaf")
+
+[node name="Grass1" type="Sprite2D" parent="GroundParallax"]
+z_index = 50
+position = Vector2(-607, 300)
+texture = ExtResource("8_5sqvh")
+
+[node name="Grass2" type="Sprite2D" parent="GroundParallax"]
+z_index = 50
+position = Vector2(-186, 300)
+texture = ExtResource("9_4jchm")
+
+[node name="Grass3" type="Sprite2D" parent="GroundParallax"]
+z_index = 50
+position = Vector2(981, 300)
+texture = ExtResource("10_k52ao")
+
+[node name="Grass4" type="Sprite2D" parent="GroundParallax"]
+z_index = 50
+position = Vector2(465, 300)
+texture = ExtResource("11_imo0d")
+
+[node name="Grass5" type="Sprite2D" parent="GroundParallax"]
+z_index = 50
+position = Vector2(160, 306)
+texture = ExtResource("12_76xgg")
+
+[node name="Grass6" type="Sprite2D" parent="GroundParallax"]
+z_index = 50
+position = Vector2(-715, 300)
+texture = ExtResource("13_07ay4")
+
+[node name="GroundCollider" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundCollider"]
+position = Vector2(0, 625)
+shape = SubResource("RectangleShape2D_p4spm")

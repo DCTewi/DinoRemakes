@@ -1,0 +1,14 @@
+<Project Sdk="Godot.NET.Sdk/4.4.0-alter">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<PublishAot>true</PublishAot>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\DinoRemakes.Core\DinoRemakes.Core.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<TrimmerRootAssembly Include="$(TargetName)" />
+		<TrimmerRootAssembly Include="GodotSharp" />
+	</ItemGroup>
+</Project>

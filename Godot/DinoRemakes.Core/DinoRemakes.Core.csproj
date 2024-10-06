@@ -1,0 +1,13 @@
+﻿<Project Sdk="Godot.NET.Sdk/4.4.0-alter">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<PublishAot>true</PublishAot>
+	</PropertyGroup>
+	<ItemGroup>
+		<TrimmerRootAssembly Include="$(TargetName)" />
+		<TrimmerRootAssembly Include="GodotSharp" />
+	</ItemGroup>
+</Project>
