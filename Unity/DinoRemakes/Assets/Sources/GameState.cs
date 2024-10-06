@@ -22,11 +22,8 @@ namespace DinoRemakes
         [field: SerializeField]
         public double GameSpeed { get; set; } = 1.0;
 
-        [field: SerializeField]
-        public double MaxGameSpeed { get; } = 5.0;
-
-        [field: SerializeField]
-        public double MaxGameSpeedDuration { get; } = 60.0;
+        public double MaxGameSpeed => 5.0;
+        public double MaxGameSpeedDuration => 60.0;
 
         public void Reset()
         {
