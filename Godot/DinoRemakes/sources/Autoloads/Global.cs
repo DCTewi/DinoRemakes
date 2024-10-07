@@ -1,4 +1,5 @@
-﻿using DinoRemakes.Sources.Models;
+﻿using DinoRemakes.Core.Save;
+using DinoRemakes.Sources.Models;
 
 using Godot;
 
@@ -8,10 +9,24 @@ namespace DinoRemakes.Sources.Autoloads;
 
 public sealed partial class Global : Node
 {
+    private static readonly string _GamePauseActionName = "game_pause";
+
     public static Global Instance { get; private set; }
+
+    public static SaveData Save
+    {
+        get => _SaveData.Load();
+        set => _SaveData = value.Save();
+    }
+    private static SaveData _SaveData = new();
 
     public static GameState GameState => Instance._state;
     [Export] private GameState _state = new();
+
+    public event Action<bool> GamePaused;
+    public event Action GameRestarted;
+    public event Action GameOver;
+
 
     public override void _EnterTree()
     {
@@ -34,12 +49,44 @@ public sealed partial class Global : Node
     {
         base._Process(delta);
 
-        _state.TimeSinceBegin += delta;
-        _state.Score = (int)(_state.TimeSinceBegin * 10.0);
-        if (_state.GameSpeed < GameState.MaxGameSpeed)
+        if (!GetTree().Paused)
         {
-            _state.GameSpeed = (float)Math.Pow(GameState.MaxGameSpeed,
-                _state.TimeSinceBegin / GameState.MaxGameSpeedDuration);
+            _state.TimeSinceBegin += delta;
+            _state.Score = (int)(_state.TimeSinceBegin * 10.0);
+            if (_state.GameSpeed < GameState.MaxGameSpeed)
+            {
+                _state.GameSpeed = (float)Math.Pow(GameState.MaxGameSpeed,
+                    _state.TimeSinceBegin / GameState.MaxGameSpeedDuration);
+            }
         }
+    }
+
+    public override void _Input(InputEvent @event)
+    {
+        base._Input(@event);
+
+        if (@event.IsActionPressed(_GamePauseActionName))
+        {
+            SetPause(!GetTree().Paused);
+        }
+    }
+
+    public void SetPause(bool paused)
+    {
+        GetTree().Paused = paused;
+        GamePaused?.Invoke(paused);
+    }
+
+    public void SetGameOver()
+    {
+        GetTree().Paused = true;
+        GameOver?.Invoke();
+    }
+
+    public void RestartGame()
+    {
+        _state.Reset();
+        GetTree().Paused = false;
+        GameRestarted?.Invoke();
     }
 }

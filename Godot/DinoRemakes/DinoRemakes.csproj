@@ -4,6 +4,9 @@
 		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<PublishAot>true</PublishAot>
 	</PropertyGroup>
+	<PropertyGroup>
+		<GodotExecutable>$(AppData)\Godot\editors\master\godot.windows.editor.x86_64.mono.exe</GodotExecutable>
+	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\DinoRemakes.Core\DinoRemakes.Core.csproj" />
 	</ItemGroup>

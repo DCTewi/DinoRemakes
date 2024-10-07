@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://ol88o05wvw3f"]
+
+[ext_resource type="Script" path="res://sources/Scripts/Gui/ScoreWidget.cs" id="1_32h2o"]
+[ext_resource type="Texture2D" uid="uid://sklyri3ixlg1" path="res://assets/sprites/medal_bronze_1.png" id="1_ntkyj"]
+[ext_resource type="Texture2D" uid="uid://dep7upsvquij3" path="res://assets/sprites/medal_silver_1.png" id="3_6tf1p"]
+[ext_resource type="Texture2D" uid="uid://ybxojn5o1wgw" path="res://assets/sprites/medal_gold_1.png" id="4_ej0tn"]
+[ext_resource type="FontFile" uid="uid://gqkxqtvnrq8q" path="res://assets/fonts/SmileySans-Oblique.otf" id="5_ej0tn"]
+
+[sub_resource type="FontVariation" id="FontVariation_px5tf"]
+base_font = ExtResource("5_ej0tn")
+variation_embolden = 0.3
+spacing_glyph = 3
+
+[node name="ScoreWidget" type="CanvasLayer"]
+script = ExtResource("1_32h2o")
+SilverMedal = ExtResource("3_6tf1p")
+GoldMedal = ExtResource("4_ej0tn")
+
+[node name="MedalImage" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 60)
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 80.0
+offset_bottom = 75.0
+texture = ExtResource("1_ntkyj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ScoreLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 100.0
+offset_top = 10.0
+offset_right = 665.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_px5tf")
+theme_override_font_sizes/font_size = 60
+text = "得分: {Global.State.Score}"

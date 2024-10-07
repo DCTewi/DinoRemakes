@@ -1,12 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://ccr7nvthxxb77"]
+[gd_scene load_steps=11 format=3 uid="uid://ccr7nvthxxb77"]
 
-[ext_resource type="PackedScene" uid="uid://bvnmi41nopujl" path="res://nodes/components/background.tscn" id="1_u81aq"]
-[ext_resource type="PackedScene" uid="uid://cspl5lvjg1bop" path="res://nodes/components/foreground.tscn" id="2_n7bon"]
-[ext_resource type="PackedScene" uid="uid://jh4t22lbgjpe" path="res://nodes/components/player.tscn" id="15_d14wj"]
+[ext_resource type="PackedScene" uid="uid://bvnmi41nopujl" path="res://nodes/subtree/background.tscn" id="1_u81aq"]
+[ext_resource type="PackedScene" uid="uid://cspl5lvjg1bop" path="res://nodes/subtree/foreground.tscn" id="2_n7bon"]
+[ext_resource type="PackedScene" uid="uid://bn58rxk3hiedc" path="res://nodes/gui/pause_widget.tscn" id="4_gxutr"]
+[ext_resource type="PackedScene" uid="uid://ol88o05wvw3f" path="res://nodes/gui/score_widget.tscn" id="5_q30y0"]
+[ext_resource type="PackedScene" uid="uid://bctly2eoqj0cf" path="res://nodes/gui/game_over_widget.tscn" id="6_oxeu0"]
+[ext_resource type="PackedScene" uid="uid://crsm4fj4cfa7f" path="res://nodes/obstacles/obstacle_flyman.tscn" id="8_5v4wd"]
+[ext_resource type="PackedScene" uid="uid://hj87aihgo58u" path="res://nodes/obstacles/obstacle_cactus_half.tscn" id="9_8frqc"]
+[ext_resource type="PackedScene" uid="uid://cxwt1wgldc5oe" path="res://nodes/obstacles/obstacle_cactus_whole.tscn" id="10_wpqy7"]
+[ext_resource type="Script" path="res://sources/Scripts/ObstacleSpawner.cs" id="14_p4spm"]
+[ext_resource type="PackedScene" uid="uid://jh4t22lbgjpe" path="res://nodes/subtree/player.tscn" id="15_d14wj"]
 
 [node name="LevelDino" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+process_callback = 0
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
@@ -14,7 +22,33 @@ editor_draw_drag_margin = true
 
 [node name="Foreground" parent="." instance=ExtResource("2_n7bon")]
 
-[node name="Player" parent="." instance=ExtResource("15_d14wj")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("15_d14wj")]
 position = Vector2(-630, 250)
+lock_rotation = true
 contact_monitor = true
 max_contacts_reported = 1
+
+[node name="ObstacleSpawner" type="Node" parent="."]
+script = ExtResource("14_p4spm")
+FlymanScenes = Array[PackedScene]([ExtResource("8_5v4wd")])
+CactusScenes = Array[PackedScene]([ExtResource("9_8frqc"), ExtResource("10_wpqy7")])
+
+[node name="FlymanTransform" type="Node2D" parent="ObstacleSpawner"]
+position = Vector2(1475, -162)
+
+[node name="CactusTransform" type="Node2D" parent="ObstacleSpawner"]
+position = Vector2(1475, 209)
+
+[node name="Timer" type="Timer" parent="ObstacleSpawner"]
+one_shot = true
+
+[node name="UI" type="Node" parent="."]
+
+[node name="PauseWidget" parent="UI" instance=ExtResource("4_gxutr")]
+visible = false
+
+[node name="ScoreWidget" parent="UI" instance=ExtResource("5_q30y0")]
+visible = false
+
+[node name="GameOverWidget" parent="UI" instance=ExtResource("6_oxeu0")]
+visible = false

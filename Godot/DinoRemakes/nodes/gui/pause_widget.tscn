@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn58rxk3hiedc"]
+
+[ext_resource type="FontFile" uid="uid://gqkxqtvnrq8q" path="res://assets/fonts/SmileySans-Oblique.otf" id="1_0ppcg"]
+[ext_resource type="Script" path="res://sources/Scripts/Gui/PauseWidget.cs" id="1_a0228"]
+
+[sub_resource type="FontVariation" id="FontVariation_tyaqy"]
+base_font = ExtResource("1_0ppcg")
+spacing_glyph = 10
+
+[node name="PauseWidget" type="CanvasLayer"]
+script = ExtResource("1_a0228")
+
+[node name="PauseButton" type="Button" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(800, 300)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -150.0
+offset_right = 400.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_tyaqy")
+theme_override_font_sizes/font_size = 200
+text = "PAUSED"
+flat = true

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Remote": {
+      "commandName": "Executable",
+      "executablePath": "$(GodotExecutable)",
+      "commandLineArgs": "--remote-debug=tcp://127.0.0.1:6007",
+      "workingDirectory": "$(GodotProjectDir)"
+    }
+  }
+}
