@@ -17,6 +17,7 @@ public partial class Player : RigidBody2D
     private bool _isOnFloor = false;
 
     private AnimatedSprite2D _sprite;
+    private AudioStreamPlayer _audio;
 
     public override void _Ready()
     {
@@ -24,6 +25,7 @@ public partial class Player : RigidBody2D
 
         _originPosition = Position;
         _sprite = GetNode<AnimatedSprite2D>("./Sprite");
+        _audio = GetNode<AudioStreamPlayer>("./AudioStreamPlayer");
 
         BodyEntered += OnBodyEntered;
 
@@ -49,6 +51,7 @@ public partial class Player : RigidBody2D
         {
             _isOnFloor = false;
             _sprite.Animation = _JumpAnimationKey;
+            _audio.Play();
             ApplyForce(_jumpForce);
         }
     }

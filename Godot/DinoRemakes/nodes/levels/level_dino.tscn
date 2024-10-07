@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ccr7nvthxxb77"]
+[gd_scene load_steps=12 format=3 uid="uid://ccr7nvthxxb77"]
 
 [ext_resource type="PackedScene" uid="uid://bvnmi41nopujl" path="res://nodes/subtree/background.tscn" id="1_u81aq"]
 [ext_resource type="PackedScene" uid="uid://cspl5lvjg1bop" path="res://nodes/subtree/foreground.tscn" id="2_n7bon"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://crsm4fj4cfa7f" path="res://nodes/obstacles/obstacle_flyman.tscn" id="8_5v4wd"]
 [ext_resource type="PackedScene" uid="uid://hj87aihgo58u" path="res://nodes/obstacles/obstacle_cactus_half.tscn" id="9_8frqc"]
 [ext_resource type="PackedScene" uid="uid://cxwt1wgldc5oe" path="res://nodes/obstacles/obstacle_cactus_whole.tscn" id="10_wpqy7"]
+[ext_resource type="AudioStream" uid="uid://d0eaq8s7ig4f0" path="res://assets/audio/bgm/calm_currents.mp3" id="11_8frqc"]
 [ext_resource type="Script" path="res://sources/Scripts/ObstacleSpawner.cs" id="14_p4spm"]
 [ext_resource type="PackedScene" uid="uid://jh4t22lbgjpe" path="res://nodes/subtree/player.tscn" id="15_d14wj"]
 
@@ -17,6 +18,12 @@
 process_callback = 0
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("11_8frqc")
+autoplay = true
+bus = &"BGM"
 
 [node name="Background" parent="." instance=ExtResource("1_u81aq")]
 
