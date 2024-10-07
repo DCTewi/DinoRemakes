@@ -4,7 +4,7 @@ using Godot;
 
 namespace DinoRemakes.Sources.Scripts;
 
-public partial class AutoParallax : Parallax2D
+public sealed partial class AutoParallax : Parallax2D
 {
     private Vector2 _originSpeed;
 

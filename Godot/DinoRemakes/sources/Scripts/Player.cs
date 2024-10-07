@@ -4,7 +4,7 @@ using Godot;
 
 namespace DinoRemakes.Sources.Scripts;
 
-public partial class Player : RigidBody2D
+public sealed partial class Player : RigidBody2D
 {
     private static readonly StringName _PlayerJumpActionName = "player_jump";
     private static readonly StringName _DriveAnimationKey = "drive";
