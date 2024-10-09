@@ -1,4 +1,4 @@
-# DinoRemakes Godot Version
+# DinoRemakes Stride Version
 
 ## Env
 
