@@ -1,0 +1,11 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinoRemakes.Windows", "DinoRemakes.Windows\DinoRemakes.Windows.csproj", "{BF6E2CC5-5977-4E07-8D67-94364ADB2B97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinoRemakes", "DinoRemakes\DinoRemakes.csproj", "{2076C217-5E19-4787-801D-BA5BC01C765B}"
+EndProject
+Global
+EndGlobal
