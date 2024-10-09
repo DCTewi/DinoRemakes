@@ -1,0 +1,10 @@
+!SpriteFont
+Id: 3bee2add-fc6a-4239-acef-b555309300d8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !FileFontProvider
+    Source: !file ../../Resources/Fonts/SmileySans-Oblique.otf
+FontType: !RuntimeRasterizedSpriteFontType
+    Size: 48.0
+    AntiAlias: ClearType
+Spacing: 1.0

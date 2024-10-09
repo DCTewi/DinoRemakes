@@ -1,0 +1,8 @@
+!Sound
+Id: 16d0b728-0e1f-4441-99a2-3ebc47cd8fa1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Audio/SE/jump.wav
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

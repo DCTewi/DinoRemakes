@@ -1,0 +1,30 @@
+!SpriteSheet
+Id: b78698e8-601e-4351-ae55-c32a0f82da5c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsCompressed: false
+Packing: {}
+Sprites:
+    3c2c277cb17db17000dc738635cd8ba4:
+        Source: !file ../../Resources/Sprites/robot_drive1.png
+        Name: robot_drive1
+        TextureRegion: {X: 0, Y: 0, Width: 158, Height: 120}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    02c396cf95d66bc60a754a6087759d9b:
+        Source: !file ../../Resources/Sprites/robot_drive2.png
+        Name: robot_drive2
+        TextureRegion: {X: 0, Y: 0, Width: 158, Height: 116}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    02f959deb09e1ed8366887c50b6a5a96:
+        Source: !file ../../Resources/Sprites/robot_jump1.png
+        Name: robot_jump1
+        TextureRegion: {X: 0, Y: 0, Width: 176, Height: 132}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

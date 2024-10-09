@@ -1,0 +1,325 @@
+!SceneAsset
+Id: fd8a7d56-be11-4b08-9256-2414cf9f6fcc
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! f3252bed-96d9-41e1-81d7-4fceef69763c
+        - ref!! 231e90e7-7804-43d0-b517-61ef06ca06ff
+        - ref!! 9c004f91-981c-4fc8-a048-e4f1b4501637
+        - ref!! e6a59e58-40cf-4201-b32b-d35c6e18802a
+    Parts:
+        -   Entity:
+                Id: 05628563-990f-4c11-a61a-3815753a873b
+                Name: Sky
+                Components:
+                    591a80539ed7a06376fa3bbddd10bd68: !TransformComponent
+                        Id: 838fde28-17ce-48d5-9bc9-9a347eba6073
+                        Position: {X: 0.0, Y: 0.0, Z: -50.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 2.0}
+                        Children: {}
+                    ee35dddd8907649b1658920e811bf6a0: !SpriteComponent
+                        Id: 8883230c-4130-4ab0-b43b-ebcd7b8d6de4
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: 4d2d3182-8be2-4b2b-8ff3-7865669a7516:Sprites/Sky
+                            PixelsPerUnit: 50.0
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 0673f07b-b083-4f41-b15c-ec93dbd758eb
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: 7f2a6be2-54bd-477e-9c2e-f56fa3bb7ae8
+                        Position: {X: 21.78398, Y: 4.9634137, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: 983cf47b-1f51-4c48-96b2-3eac9386e9d3
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                            CurrentFrame: 1
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 14190392-81b9-41e3-92da-345d86ba245d
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: a480617b-e9fb-4e75-a9e5-97514bf3e13e
+                        Position: {X: 4.1300826, Y: 4.1504073, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: 680badc2-db7b-45cd-bda7-d2219dd393af
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                            CurrentFrame: 4
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 231e90e7-7804-43d0-b517-61ef06ca06ff
+                Name: DebugBackground
+                Components:
+                    d98a74d5ab15734be61737ce7fa8e550: !TransformComponent
+                        Id: 6bab2d65-515a-4fe2-846e-df2f2df1826b
+                        Position: {X: 0.0, Y: 0.0, Z: -200.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2aa461cc57ed88236e8895c53f6fd518: !ModelComponent
+                        Id: 39c13384-34f4-42e8-854a-b34144fe577a
+                        Model: 5c69195c-89ad-41a5-9978-d9b036fb1d10:Models/DebugBackground
+                        IsShadowCaster: false
+                        Materials: {}
+        -   Entity:
+                Id: 340f4658-ff27-4060-a076-0db1eeff6ed4
+                Name: Random Clouds Parallax
+                Components:
+                    bdfe0bfb6a29d1d1230c934165a7b040: !TransformComponent
+                        Id: 5be480f1-994d-40bf-ba89-f07761a6b840
+                        Position: {X: 0.0, Y: 0.0, Z: -5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2522a39a009af3d6926639480a833bc2: ref!! 790f134e-4e3a-4710-a724-5bc57c85cca0
+                            d4980b61d926956cf724badba5c491d5: ref!! a480617b-e9fb-4e75-a9e5-97514bf3e13e
+                            7e1364b3b6793440b205f2cfedc460b9: ref!! b684ae9f-2e17-484b-8f34-8fb6c1ff5af6
+                            aa18bea3225c8938b5fcbe386e22e331: ref!! 2b9dfbea-fd90-4a21-a29e-79a335b79f48
+                            eb565cc9e969c36309e60caa932704f4: ref!! 7626fcc8-8af9-44ab-9148-ec33dadda265
+                            e80d4e3c1eefe0ff47562a05b806f065: ref!! b85bd539-d5d9-45d3-b96a-81b3aba421b8
+                            eadb1d068883cc96f51c358134b769bf: ref!! 7f2a6be2-54bd-477e-9c2e-f56fa3bb7ae8
+                    1d61a7836b888bb894de2fcbcf3dd018: !DinoRemakes.Core.Components.RandomParallaxAdapter,DinoRemakes
+                        Id: 0d9dffe9-5a4a-4ae3-9e50-76fab15435f6
+                        MoveSpeedRange: {X: -0.5, Y: -0.9}
+                        ScaleRange: {X: 1.0, Y: 1.4}
+                        MoveLength: 20.0
+        -   Folder: null
+            Entity:
+                Id: 401c9e96-ee94-4ac5-bae1-fcc6641066f2
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: b85bd539-d5d9-45d3-b96a-81b3aba421b8
+                        Position: {X: 17.960514, Y: 3.0470376, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: 615ce90e-32fb-40cd-b52f-2a7f87316018
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                            CurrentFrame: 3
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 6b0da4bf-335e-4d59-8237-c2727c7ee5df
+                Name: Cloud Parallax
+                Components:
+                    1e037024631eb7151bd9617361f865a6: !TransformComponent
+                        Id: d8b15457-0fd5-46b5-9b68-abc2f7314c31
+                        Position: {X: 0.0, Y: 0.0, Z: -9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            3d285c4b6c377bf1a0ada5d45aed991c: ref!! 84f50fcf-2364-459a-be4b-81b0f67c13be
+                            a8cfe5154018f904ac214ec847493c69: ref!! 1cff8b95-a1ff-490e-8a41-aac5710c1a26
+                    241fe164af33104d1aa1ce9c14c6da0d: !DinoRemakes.Core.Components.ParallaxAdapter,DinoRemakes
+                        Id: 216434a7-d260-4d45-a935-efc1125c9972
+                        MoveSpeed: -0.5
+                        MoveLength: 20.0
+        -   Entity:
+                Id: 740b38c5-94ce-4ab6-84b6-4b1fb5591717
+                Name: Clouds
+                Components:
+                    67e4928cf9409ca08cce2b7fe454efea: !TransformComponent
+                        Id: 84f50fcf-2364-459a-be4b-81b0f67c13be
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5e5f02970964734b249f036bbdab3292: !SpriteComponent
+                        Id: 0f5e8036-6b66-4c79-91c4-37e2f8d9c466
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: 70518d07-c179-4fbc-9269-e5dbd3e990eb:Sprites/clouds1
+                            PixelsPerUnit: 50.0
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 74103853-344e-40a4-9009-cf416441b20b
+                Name: Clouds
+                Components:
+                    67e4928cf9409ca08cce2b7fe454efea: !TransformComponent
+                        Id: 1cff8b95-a1ff-490e-8a41-aac5710c1a26
+                        Position: {X: 20.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5e5f02970964734b249f036bbdab3292: !SpriteComponent
+                        Id: 6d701aa4-a080-4fff-82a0-0e8b0b5278ae
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: 70518d07-c179-4fbc-9269-e5dbd3e990eb:Sprites/clouds1
+                            PixelsPerUnit: 50.0
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 78d0424a-b0ce-4846-9caa-675b166cbda7
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: 2b9dfbea-fd90-4a21-a29e-79a335b79f48
+                        Position: {X: -7.9488945, Y: 2.536005, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: 71715749-3389-4d7d-9536-8c4164fb8024
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                            CurrentFrame: 3
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 85890b85-5059-42db-8919-34bab7d5ef72
+                Name: Hills
+                Components:
+                    9b8325e0c93cca9c6f1975ab8a246531: !TransformComponent
+                        Id: 55a68f0c-1d2e-434b-86e9-ecffdbfb1e6e
+                        Position: {X: 0.0, Y: -1.75, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children: {}
+                    08eef44c47c0c5b9204169a296e3bc0a: !SpriteComponent
+                        Id: 8149a11a-07ac-420e-a911-726cab5bf4ac
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/hills_1
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 927b1c1a-074b-4c0e-a4f2-364c2dfe2980
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: 7626fcc8-8af9-44ab-9148-ec33dadda265
+                        Position: {X: 13.463415, Y: 3.9413476, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: cfc0fff6-23dd-4eef-8666-91746597be5b
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                            CurrentFrame: 1
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 9c004f91-981c-4fc8-a048-e4f1b4501637
+                Name: Camera
+                Components:
+                    dfb931ede201a67165e75fa9d8efef99: !TransformComponent
+                        Id: a8952d74-9733-4b76-a954-f281268bbdd1
+                        Position: {X: 0.0, Y: 0.0, Z: 200.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3f90e274124d0066ed3d98163dc70127: !CameraComponent
+                        Id: 51486a7e-5d79-479f-b6a6-5502a6294001
+                        Name: Main
+                        Projection: Orthographic
+                        OrthographicSize: 11.0
+                        NearClipPlane: 1.0
+                        Slot: 2c65d75c-a6d6-40c0-900b-a883fe3cbbee
+        -   Entity:
+                Id: c3d13ddf-52bc-4e8c-9593-1924a473175b
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: 790f134e-4e3a-4710-a724-5bc57c85cca0
+                        Position: {X: 0.0, Y: 3.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: f4d7009e-789f-487c-9d33-6db905b464d6
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: c5d2d97b-629d-4ace-b8f4-7d25a935fde7
+                Name: Hill Parallax
+                Components:
+                    1e037024631eb7151bd9617361f865a6: !TransformComponent
+                        Id: d5f1fbcf-097f-42ec-a861-70b68a348fe3
+                        Position: {X: 0.0, Y: 0.0, Z: -5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2613c27153da45135341567771acd203: ref!! 55a68f0c-1d2e-434b-86e9-ecffdbfb1e6e
+                            418cde51bdf00174c3d81b4633241285: ref!! 790cec01-2c7d-4f43-ab39-3194f563aa03
+                    241fe164af33104d1aa1ce9c14c6da0d: !DinoRemakes.Core.Components.ParallaxAdapter,DinoRemakes
+                        Id: 19ecc351-0268-426b-b06c-d09c1fa0e625
+                        MoveSpeed: -1.5
+                        MoveLength: 20.0
+        -   Folder: null
+            Entity:
+                Id: e22df8bb-ed24-47b8-9af3-2eed08ab2537
+                Name: Clouds
+                Components:
+                    c4c823b13648ee19784ddbb767d7468b: !TransformComponent
+                        Id: b684ae9f-2e17-484b-8f34-8fb6c1ff5af6
+                        Position: {X: 8.6596985, Y: 2.536005, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
+                        Id: eba1b69d-9e46-4b36-964c-9dee2421c983
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
+                            CurrentFrame: 2
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: e6962d26-be61-4ddf-a392-ff60ac826e69
+                Name: Hills
+                Components:
+                    9b8325e0c93cca9c6f1975ab8a246531: !TransformComponent
+                        Id: 790cec01-2c7d-4f43-ab39-3194f563aa03
+                        Position: {X: 20.0, Y: -1.75, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children: {}
+                    08eef44c47c0c5b9204169a296e3bc0a: !SpriteComponent
+                        Id: addb4106-a707-4f8d-a711-9eba14a23469
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/hills_1
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: e6a59e58-40cf-4201-b32b-d35c6e18802a
+                Name: Background
+                Components:
+                    ad6c6e6a0c3bdc6a0922e16a044056b4: !TransformComponent
+                        Id: 00f34905-1c65-4736-b050-6c536d5ad2e7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            7d607f5b8b559cae813ca7bca539db6f: ref!! 838fde28-17ce-48d5-9bc9-9a347eba6073
+                            edeaeb848ab8c3480cf5bc25acc68127: ref!! d8b15457-0fd5-46b5-9b68-abc2f7314c31
+                            f3f30ec103d5f7f003a2f1a7c5820ec2: ref!! d5f1fbcf-097f-42ec-a861-70b68a348fe3
+                            d83028a9dd10b899f1dde0b6ac645435: ref!! 5be480f1-994d-40bf-ba89-f07761a6b840
+        -   Entity:
+                Id: f3252bed-96d9-41e1-81d7-4fceef69763c
+                Name: GameManager
+                Components:
+                    9955d051582a35aab983bb7c5ef62557: !TransformComponent
+                        Id: ddef40d2-9278-4a79-a97f-c79cda2fd4fc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}

@@ -1,0 +1,37 @@
+!SpriteSheet
+Id: c509045c-32d6-4d8b-a25d-83dffffc81b8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsCompressed: false
+Packing: {}
+Sprites:
+    6a8b814f17c3756e9cc44cba46c60e3b:
+        Source: !file ../../Resources/Sprites/flyman_fly1.png
+        Name: flyman_fly1
+        TextureRegion: {X: 0, Y: 0, Width: 122, Height: 139}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    6b6480e7622e423ae57b8519070ee874:
+        Source: !file ../../Resources/Sprites/flyman_fly2.png
+        Name: flyman_fly2
+        TextureRegion: {X: 0, Y: 0, Width: 122, Height: 139}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    39e393fbd33dd84510da87dd68852bf5:
+        Source: !file ../../Resources/Sprites/flyman_fly3.png
+        Name: flyman_fly3
+        TextureRegion: {X: 0, Y: 0, Width: 122, Height: 135}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    9ce345db07e37f133981c3c925700dfc:
+        Source: !file ../../Resources/Sprites/flyman_fly4.png
+        Name: flyman_fly4
+        TextureRegion: {X: 0, Y: 0, Width: 122, Height: 139}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

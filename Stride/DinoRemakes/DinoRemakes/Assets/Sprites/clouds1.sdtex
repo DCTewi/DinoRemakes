@@ -1,0 +1,8 @@
+!Texture
+Id: 70518d07-c179-4fbc-9269-e5dbd3e990eb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sprites/clouds1.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

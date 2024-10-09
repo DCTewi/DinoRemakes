@@ -1,0 +1,7 @@
+!Sound
+Id: ad8af672-a085-4cd3-a3b2-0a9d5dcad50f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/Audio/BGM/Calm_Currents.mp3
+StreamFromDisk: true
+Spatialized: false

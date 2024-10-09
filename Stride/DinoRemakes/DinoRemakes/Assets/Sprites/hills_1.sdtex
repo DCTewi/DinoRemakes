@@ -1,0 +1,8 @@
+!Texture
+Id: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sprites/hills_1.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

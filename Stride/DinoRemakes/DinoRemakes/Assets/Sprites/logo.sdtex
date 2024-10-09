@@ -1,0 +1,8 @@
+!Texture
+Id: 25de9daa-c350-4092-ae03-d88d75359c45
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sprites/logo.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

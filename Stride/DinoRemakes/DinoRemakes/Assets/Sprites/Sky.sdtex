@@ -1,0 +1,8 @@
+!Texture
+Id: 4d2d3182-8be2-4b2b-8ff3-7865669a7516
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Sprites/sky_1.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

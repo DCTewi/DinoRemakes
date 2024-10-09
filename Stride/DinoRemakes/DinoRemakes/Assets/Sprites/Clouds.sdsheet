@@ -1,0 +1,44 @@
+!SpriteSheet
+Id: a6800aaa-8705-4597-8b64-1d3c3f3a397b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsCompressed: false
+Packing: {}
+Sprites:
+    6f636ea206c6f86b0c357f9ac15b4522:
+        Source: !file ../../Resources/Sprites/cloud_1.png
+        Name: cloud_1
+        TextureRegion: {X: 0, Y: 0, Width: 190, Height: 127}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    23d0eaa7063b64a181cd16cfddd94e05:
+        Source: !file ../../Resources/Sprites/cloud_2.png
+        Name: cloud_2
+        TextureRegion: {X: 0, Y: 0, Width: 200, Height: 125}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    b50ff3fd7b7160cedf00fce9877e60fa:
+        Source: !file ../../Resources/Sprites/cloud_3.png
+        Name: cloud_3
+        TextureRegion: {X: 0, Y: 0, Width: 177, Height: 121}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    7ace606b7ae4ece05dc1ecfe945560cc:
+        Source: !file ../../Resources/Sprites/cloud_4.png
+        Name: cloud_4
+        TextureRegion: {X: 0, Y: 0, Width: 228, Height: 124}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    271e55bbf1ac70a4d44d63543077a581:
+        Source: !file ../../Resources/Sprites/cloud_5.png
+        Name: cloud_5
+        TextureRegion: {X: 0, Y: 0, Width: 238, Height: 135}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

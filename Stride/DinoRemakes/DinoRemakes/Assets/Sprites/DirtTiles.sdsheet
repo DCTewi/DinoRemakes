@@ -1,0 +1,51 @@
+!SpriteSheet
+Id: f468303d-3c6c-4a8e-8472-6d18c78d4e57
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsCompressed: false
+Packing: {}
+Sprites:
+    e5aa8f21f959c2c4196b7776f542bd77:
+        Source: !file ../../Resources/Sprites/tile_dirt_1.png
+        Name: tile_dirt_1
+        TextureRegion: {X: 0, Y: 0, Width: 70, Height: 70}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    0906e51c015c5921d6c752c8d7d37051:
+        Source: !file ../../Resources/Sprites/tile_dirt_2.png
+        Name: tile_dirt_2
+        TextureRegion: {X: 0, Y: 0, Width: 70, Height: 70}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    40cb0e952f10a536f7feb4f58973d6c2:
+        Source: !file ../../Resources/Sprites/tile_dirt_3.png
+        Name: tile_dirt_3
+        TextureRegion: {X: 0, Y: 0, Width: 70, Height: 70}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    2105b2861c6c9b5080acddfed835fa12:
+        Source: !file ../../Resources/Sprites/tile_dirt_4.png
+        Name: tile_dirt_4
+        TextureRegion: {X: 0, Y: 0, Width: 70, Height: 70}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    5331acce63dde84d8897fecc66258b10:
+        Source: !file ../../Resources/Sprites/tile_dirt_5.png
+        Name: tile_dirt_5
+        TextureRegion: {X: 0, Y: 0, Width: 70, Height: 70}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    aae8a8dd9b2ab88813d90a3a174205df:
+        Source: !file ../../Resources/Sprites/tile_dirt_6.png
+        Name: tile_dirt_6
+        TextureRegion: {X: 0, Y: 0, Width: 70, Height: 70}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

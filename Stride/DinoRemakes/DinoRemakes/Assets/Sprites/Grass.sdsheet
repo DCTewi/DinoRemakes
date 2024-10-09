@@ -1,0 +1,51 @@
+!SpriteSheet
+Id: 47f4857a-17db-464b-a656-c8a65269808f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+IsCompressed: false
+Packing: {}
+Sprites:
+    4719cf7e82934614136fa74807b64e70:
+        Source: !file ../../Resources/Sprites/grass_1.png
+        Name: grass_1
+        TextureRegion: {X: 0, Y: 0, Width: 26, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    659fab1ff57710e6389b3792c9cb0035:
+        Source: !file ../../Resources/Sprites/grass_2.png
+        Name: grass_2
+        TextureRegion: {X: 0, Y: 0, Width: 26, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    b4c636f4c2c7792c69d0464e580933f2:
+        Source: !file ../../Resources/Sprites/grass_3.png
+        Name: grass_3
+        TextureRegion: {X: 0, Y: 0, Width: 38, Height: 35}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    87e8576f78eddafdb8fb5bc2d3e86503:
+        Source: !file ../../Resources/Sprites/grass_4.png
+        Name: grass_4
+        TextureRegion: {X: 0, Y: 0, Width: 38, Height: 35}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    d0bf1a4d21a26ecf991a61d9c1b8c555:
+        Source: !file ../../Resources/Sprites/grass_5.png
+        Name: grass_5
+        TextureRegion: {X: 0, Y: 0, Width: 26, Height: 29}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    11e556606e942af46fe0f8be0cab2504:
+        Source: !file ../../Resources/Sprites/grass_6.png
+        Name: grass_6
+        TextureRegion: {X: 0, Y: 0, Width: 38, Height: 35}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
