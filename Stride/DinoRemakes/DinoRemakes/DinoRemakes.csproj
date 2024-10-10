@@ -15,8 +15,4 @@
 
     <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.2.0.2232" IncludeAssets="build;buildTransitive" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Core\Utils\" />
-  </ItemGroup>
 </Project>

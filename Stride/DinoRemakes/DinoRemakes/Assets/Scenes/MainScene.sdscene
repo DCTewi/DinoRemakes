@@ -10,6 +10,8 @@ Hierarchy:
         - ref!! 231e90e7-7804-43d0-b517-61ef06ca06ff
         - ref!! 9c004f91-981c-4fc8-a048-e4f1b4501637
         - ref!! e6a59e58-40cf-4201-b32b-d35c6e18802a
+        - ref!! fe71dfbf-8e67-4240-b950-1d22ca990b28
+        - ref!! eb7f67f8-7aab-485b-826b-a876f23e9030
     Parts:
         -   Entity:
                 Id: 05628563-990f-4c11-a61a-3815753a873b
@@ -62,6 +64,24 @@ Hierarchy:
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 4
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 15a703f0-0961-4d94-8939-74838d0ce0ff
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 527f62f9-d4f0-481a-a3cc-56db603c6b67
+                        Position: {X: 23.823591, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: ff65e4dd-ab81-430c-970d-137604fb3527
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 04ac57f7-adc0-405c-9bd3-3a419fc299f3
         -   Entity:
                 Id: 231e90e7-7804-43d0-b517-61ef06ca06ff
                 Name: DebugBackground
@@ -77,6 +97,24 @@ Hierarchy:
                         Model: 5c69195c-89ad-41a5-9978-d9b036fb1d10:Models/DebugBackground
                         IsShadowCaster: false
                         Materials: {}
+        -   Folder: null
+            Entity:
+                Id: 29a97820-bfac-4753-8001-1b0d387e9387
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: dd488254-7e63-478f-9088-b112152e732e
+                        Position: {X: 14.425217, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: bf1d6fc6-debf-4bc2-958a-b8c5480d39cb
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 731f51fb-1492-4006-a0c2-5a67c266d92e
         -   Entity:
                 Id: 340f4658-ff27-4060-a076-0db1eeff6ed4
                 Name: Random Clouds Parallax
@@ -101,6 +139,24 @@ Hierarchy:
                         MoveLength: 20.0
         -   Folder: null
             Entity:
+                Id: 37bfe30e-98fc-4504-8a9a-c8a45d927093
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 8570f8c2-97d8-4059-8a34-b37abfdd680d
+                        Position: {X: -0.93831015, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: de930a42-246a-4e79-b588-3cb4604a5a52
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 15591b05-eac3-4f65-89d6-1eab32cf243a
+        -   Folder: null
+            Entity:
                 Id: 401c9e96-ee94-4ac5-bae1-fcc6641066f2
                 Name: Clouds
                 Components:
@@ -116,6 +172,41 @@ Hierarchy:
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 48880854-0e3c-4050-872b-bd86f423ff78
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 11645624-1e74-4146-99ad-5016051924f7
+                        Position: {X: 20.083755, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 0d61dc52-d547-41eb-9971-765842467fb8
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 1df73967-525d-42d1-bacb-a552390f0ec6
+        -   Entity:
+                Id: 668a9ecd-516d-4021-bdb9-21650c913927
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 9b091ade-928b-4e1d-bf6f-0eeac2ec9cd1
+                        Position: {X: -8.148532, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 4f874756-c88a-4fde-8bd7-354d3eea3fd5
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 04962bd1-d7e9-4df5-8499-a58d92f58194
         -   Entity:
                 Id: 6b0da4bf-335e-4d59-8237-c2727c7ee5df
                 Name: Cloud Parallax
@@ -183,6 +274,24 @@ Hierarchy:
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 806264e2-a9d7-4280-b05e-1d3a3d6a74fe
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 97bb9365-22ec-40bc-8f70-e396dbce2f04
+                        Position: {X: 7.2382255, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 2dda39c4-fbda-435a-83be-6fb9c504e85b
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: b33cce59-a870-4f28-9a98-0ba1ce7ee0fe
         -   Entity:
                 Id: 85890b85-5059-42db-8919-34bab7d5ef72
                 Name: Hills
@@ -199,6 +308,30 @@ Hierarchy:
                             Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/hills_1
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Entity:
+                Id: 8cd7c1f7-179b-409a-a234-89c8e9281fb0
+                Name: Ground Collider
+                Components:
+                    51f142789de9573fb98620784443dbf1: !TransformComponent
+                        Id: e94fba97-9b6f-4496-965a-cf9927d38c96
+                        Position: {X: 0.0, Y: -3.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8b7fef3802ee77f55666e5b853442ec7: !StaticColliderComponent
+                        Id: 829f5882-2f00-4cf7-88e4-08dece8c5bb5
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            226c940db5a3ba73a7fbb5a9a83861b2: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0
         -   Folder: null
             Entity:
                 Id: 927b1c1a-074b-4c0e-a4f2-364c2dfe2980
@@ -216,6 +349,24 @@ Hierarchy:
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 1
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+        -   Folder: null
+            Entity:
+                Id: 9a38297e-c60d-4de7-a507-677ba5f1ab62
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 81828fca-bc02-428f-82e5-af105737aea3
+                        Position: {X: -10.875594, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 83363ccd-4f1e-429e-9858-68af5c57fe67
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 85590c00-8708-4888-8384-d6ec88e4edcf
         -   Entity:
                 Id: 9c004f91-981c-4fc8-a048-e4f1b4501637
                 Name: Camera
@@ -233,6 +384,60 @@ Hierarchy:
                         OrthographicSize: 11.0
                         NearClipPlane: 1.0
                         Slot: 2c65d75c-a6d6-40c0-900b-a883fe3cbbee
+        -   Folder: null
+            Entity:
+                Id: aa7f0a9d-077f-4e2e-b9d6-6fd1b1a8d6b0
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: be5b952d-cabf-44d7-8285-6b84ad44f5d3
+                        Position: {X: 6.6249886, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 6a5363ea-01a4-4320-baef-03feab11896d
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: b8785e61-f16d-45f1-a246-c5142133361b
+        -   Folder: null
+            Entity:
+                Id: b371d53a-c773-488b-8a98-ce3c3e9714be
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 8562d0af-9110-4891-9397-18117a8fc54d
+                        Position: {X: 15.69351, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 06711d51-e477-44c9-b702-140a8b65f485
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: d611406a-8f05-4926-998d-35152339ca03
+        -   Folder: null
+            Entity:
+                Id: c05a7988-df6c-4603-b33e-2ca0bfb1f9e9
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: a0a6a8df-11a2-4782-8135-170f336e6fc0
+                        Position: {X: 27.88863, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 588236f1-90f7-4fe8-9303-9d7e89929e8c
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: f266b7ec-0930-4065-bda2-ad3a42637d28
         -   Entity:
                 Id: c3d13ddf-52bc-4e8c-9593-1924a473175b
                 Name: Clouds
@@ -265,6 +470,41 @@ Hierarchy:
                         Id: 19ecc351-0268-426b-b06c-d09c1fa0e625
                         MoveSpeed: -1.5
                         MoveLength: 20.0
+        -   Folder: null
+            Entity:
+                Id: c70a454f-fae4-412d-ac95-1add87caad5a
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: e371120d-d614-4abb-96d6-44e2627a02c2
+                        Position: {X: -5.8442354, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 064135e5-2c21-4ea5-899c-39c10dbe0b51
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: 74e759f8-8106-4182-9e8a-96b9ff0c6dde
+        -   Entity:
+                Id: e15272d4-4246-447f-8396-8cbaff56b809
+                Name: TilemapRenderer
+                Components:
+                    075e93c10ac309da0cbf162c92e6912e: !TransformComponent
+                        Id: 921cc63b-d68f-412c-9e02-09f11d31ffda
+                        Position: {X: 0.0, Y: -3.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f184cf85658680100993352763ae31e5: !DinoRemakes.Core.Components.TilemapRenderer,DinoRemakes
+                        Id: a3efbd18-372b-49ec-a9e3-59bccd7115d9
+                        Tileset: f468303d-3c6c-4a8e-8472-6d18c78d4e57:Sprites/DirtTiles
+                        Tilemap: 02893040-edcf-40fb-95b1-b528b76080c4:Tilemap/background
+                        TileSize: {X: 1.0, Y: 1.0}
+                        PixelPerUnit: {X: 70.0, Y: 70.0}
+                        Anchor: {X: -30.0, Y: -0.5, Z: 0.0}
         -   Folder: null
             Entity:
                 Id: e22df8bb-ed24-47b8-9af3-2eed08ab2537
@@ -314,6 +554,41 @@ Hierarchy:
                             f3f30ec103d5f7f003a2f1a7c5820ec2: ref!! d5f1fbcf-097f-42ec-a861-70b68a348fe3
                             d83028a9dd10b899f1dde0b6ac645435: ref!! 5be480f1-994d-40bf-ba89-f07761a6b840
         -   Entity:
+                Id: eb7f67f8-7aab-485b-826b-a876f23e9030
+                Name: Player
+                Components:
+                    a75f2281eb93aa8854a47f2c04bd5d18: !TransformComponent
+                        Id: a42e8277-828f-4525-b0b8-06cbf65d8d73
+                        Position: {X: -6.238469, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    96b5ade8a4b8e9443d16f8beca509e9a: !SpriteComponent
+                        Id: f66e0f1d-4932-4beb-870c-651eba095a04
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: b78698e8-601e-4351-ae55-c32a0f82da5c:Sprites/Player
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    b0e1ba5f840be512c8a3bd513779b331: !CharacterComponent
+                        Id: 532e728a-d188-4e22-9b82-b8a983bc84da
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 30.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 17.0
+                        Gravity: {X: 0.0, Y: -30.0, Z: 0.0}
+                        ColliderShapes:
+                            51c99bf174778ec62a8f47c1ff8e7064: !BoxColliderShapeDesc
+                                Is2D: true
+                                Size: {X: 1.6, Y: 1.2, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    33aa6294130a43feb7584cbf5dd356f3: !DinoRemakes.Core.Components.PlayerController,DinoRemakes
+                        Id: 8c7d6735-c6cb-4ba3-9e9e-2bb6c5943ec8
+        -   Entity:
                 Id: ec5cab2c-2b62-47d5-94ac-480a701c0cba
                 Name: GameManager
                 Components:
@@ -325,3 +600,49 @@ Hierarchy:
                         Children: {}
                     5680ccf3fe8e9e2d45ecce99d5416993: !DinoRemakes.Core.Components.GameManager,DinoRemakes
                         Id: 5d5c134c-7922-43cf-ae3b-cb4afd0bfc08
+        -   Folder: null
+            Entity:
+                Id: fa6f7330-02a8-41ea-9c3f-86cc27cef36c
+                Name: Grass
+                Components:
+                    7539092be1a657c27c26b60d7815744f: !TransformComponent
+                        Id: 9ffa5c02-8864-40b0-b63f-2085dac2c08b
+                        Position: {X: -16.675825, Y: -3.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
+                        Id: 3bc9cfc0-8773-4a68-8afd-57dd89ff67ae
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
+                        Id: a524d5f6-af01-4268-ada9-1a20cad55ad2
+        -   Entity:
+                Id: fe71dfbf-8e67-4240-b950-1d22ca990b28
+                Name: Foreground
+                Components:
+                    4b41cd3940ade7f46d04a9367d7df3fd: !TransformComponent
+                        Id: 34f03bb0-72f3-4e7a-8b99-36f36a7e6e90
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            161c255243276872d0d091b66af5a763: ref!! 921cc63b-d68f-412c-9e02-09f11d31ffda
+                            269a6e225f870b7f239111d742ae1aa5: ref!! 9b091ade-928b-4e1d-bf6f-0eeac2ec9cd1
+                            0e2f925efb624bcd42945ed759c77eb7: ref!! e371120d-d614-4abb-96d6-44e2627a02c2
+                            9212e6f698d88c341939e3bdb9a78fe5: ref!! 8570f8c2-97d8-4059-8a34-b37abfdd680d
+                            f897c2b62dd4305510231fa5207dd7de: ref!! be5b952d-cabf-44d7-8285-6b84ad44f5d3
+                            4a3ab72985124997f3ab6dee19f52dbc: ref!! 97bb9365-22ec-40bc-8f70-e396dbce2f04
+                            ddcf93564daa2a688bbec16f4e4093d0: ref!! dd488254-7e63-478f-9088-b112152e732e
+                            ef66adae702154205dbc6456c10d4a5e: ref!! 8562d0af-9110-4891-9397-18117a8fc54d
+                            2506c275b834c4e8679d3ec7a4b926cf: ref!! 9ffa5c02-8864-40b0-b63f-2085dac2c08b
+                            9ce96d503dfba2a8be5c8275b951e6e1: ref!! 527f62f9-d4f0-481a-a3cc-56db603c6b67
+                            69fd819bce619df8d1b027a8ef9ca04c: ref!! 11645624-1e74-4146-99ad-5016051924f7
+                            498db076cc7623ece41b449e2c4da441: ref!! a0a6a8df-11a2-4782-8135-170f336e6fc0
+                            8fe3452ed98281543bc093d96c325c8c: ref!! 81828fca-bc02-428f-82e5-af105737aea3
+                            6bfd9368b48d86c0fed53645621b553c: ref!! e94fba97-9b6f-4496-965a-cf9927d38c96
+                    6019e9c6a43338ccd215449939d265de: !DinoRemakes.Core.Components.ParallaxAdapter,DinoRemakes
+                        Id: ce3de34b-f9ae-4a92-aa64-f2be1c5019c9
+                        MoveSpeed: -8.0
+                        MoveLength: 20.0
