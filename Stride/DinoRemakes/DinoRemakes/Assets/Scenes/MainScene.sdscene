@@ -6,7 +6,7 @@ ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
-        - ref!! f3252bed-96d9-41e1-81d7-4fceef69763c
+        - ref!! ec5cab2c-2b62-47d5-94ac-480a701c0cba
         - ref!! 231e90e7-7804-43d0-b517-61ef06ca06ff
         - ref!! 9c004f91-981c-4fc8-a048-e4f1b4501637
         - ref!! e6a59e58-40cf-4201-b32b-d35c6e18802a
@@ -314,12 +314,14 @@ Hierarchy:
                             f3f30ec103d5f7f003a2f1a7c5820ec2: ref!! d5f1fbcf-097f-42ec-a861-70b68a348fe3
                             d83028a9dd10b899f1dde0b6ac645435: ref!! 5be480f1-994d-40bf-ba89-f07761a6b840
         -   Entity:
-                Id: f3252bed-96d9-41e1-81d7-4fceef69763c
+                Id: ec5cab2c-2b62-47d5-94ac-480a701c0cba
                 Name: GameManager
                 Components:
-                    9955d051582a35aab983bb7c5ef62557: !TransformComponent
-                        Id: ddef40d2-9278-4a79-a97f-c79cda2fd4fc
+                    9a9af3a494f672f53451b7c2896a9390: !TransformComponent
+                        Id: 7f79cabd-b70f-4d8d-b68d-20b577f6708c
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
+                    5680ccf3fe8e9e2d45ecce99d5416993: !DinoRemakes.Core.Components.GameManager,DinoRemakes
+                        Id: 5d5c134c-7922-43cf-ae3b-cb4afd0bfc08

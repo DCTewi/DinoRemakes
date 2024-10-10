@@ -1,4 +1,7 @@
-﻿using Stride.Core.Extensions;
+﻿using DinoRemakes.Core.Extensions;
+using DinoRemakes.Core.Models;
+
+using Stride.Core.Extensions;
 using Stride.Engine;
 
 using System;
@@ -22,14 +25,14 @@ namespace DinoRemakes.Core.Components
 
         public override void Update()
         {
-            var delta = (float)Game.UpdateTime.Elapsed.TotalSeconds;
+            var delta = Game.DeltaTime();
 
             Entity.GetChildren()
                 .ForEach(entity =>
             {
                 var position = entity.Transform.Position;
 
-                position.X += MoveSpeed * delta;
+                position.X += MoveSpeed * delta * Globals.State.GameSpeed;
 
                 if (MoveSpeed > 0f)
                 {
