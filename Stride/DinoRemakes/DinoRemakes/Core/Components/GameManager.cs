@@ -13,12 +13,16 @@ namespace DinoRemakes.Core.Components
     public class GameManager : SyncScript
     {
         private readonly EventReceiver<bool> _gamePauseListener = new(Globals.GamePausedEventKey);
+        private readonly EventReceiver _gameOverListener = new(Globals.GameOverEventKey);
+        private readonly EventReceiver _gameRestartListener = new(Globals.GameRestartEventKey);
 
         public override void Start()
         {
             base.Start();
 
             Script.AddTask(ListenPauseEvent);
+            Script.AddTask(ListenOverEvent);
+            Script.AddTask(ListenRestartEvent);
 
             InitalizeVirtualButtons();
         }
@@ -36,7 +40,7 @@ namespace DinoRemakes.Core.Components
             }
 
             DebugText.Print($"Score: {Globals.State.Score}, GameSpeed: {Globals.State.GameSpeed}",
-                new Stride.Core.Mathematics.Int2(10, 10));
+                new Stride.Core.Mathematics.Int2(10, 80));
 
             if (Input.IsVirtualButtonPressed(0, Globals.GamePauseInputName))
             {
@@ -53,6 +57,26 @@ namespace DinoRemakes.Core.Components
                 var paused = await _gamePauseListener.ReceiveAsync();
 
                 Game.UpdateTime.Factor = paused ? 0 : 1;
+            }
+        }
+        public async Task ListenOverEvent()
+        {
+            while (Game.IsRunning)
+            {
+                await _gameOverListener.ReceiveAsync();
+
+                Globals.State.Paused = true;
+                Game.UpdateTime.Factor = 0;
+            }
+        }
+        public async Task ListenRestartEvent()
+        {
+            while (Game.IsRunning)
+            {
+                await _gameRestartListener.ReceiveAsync();
+
+                Globals.State.Reset();
+                Game.UpdateTime.Factor = 1;
             }
         }
 

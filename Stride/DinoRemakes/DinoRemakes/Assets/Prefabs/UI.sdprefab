@@ -39,6 +39,8 @@ Hierarchy:
                         Page: 0b7744ff-e8ca-4bfb-8a4c-5a838a5ee8c2:Prefabs/UI/GameOverWidget
                         Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    7f164d55fe6379c21b554d146c6533e1: !DinoRemakes.Core.Gui.GameOverWidget,DinoRemakes
+                        Id: ef1c5249-184f-404e-93dd-d948ae6a11e1
         -   Entity:
                 Id: b4f92365-b1e0-49e5-a814-ef03d105301b
                 Name: PauseWidget

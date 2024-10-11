@@ -1,0 +1,52 @@
+!PrefabAsset
+Id: 19917077-da69-4b66-b669-09f189bb0531
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! ebef266d-e9aa-4b67-99f7-5893ca9d62ca
+    Parts:
+        -   Entity:
+                Id: ebef266d-e9aa-4b67-99f7-5893ca9d62ca
+                Name: CactusWhole
+                Components:
+                    5d61425d52b972a36584688aed436d5a: !TransformComponent
+                        Id: b2cb5970-b732-4df3-b02f-3f63da15f04e
+                        Position: {X: 3.198606, Y: -3.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6b505be10e0493f5682649e80e222f5f: !SpriteComponent
+                        Id: 57bd22d6-7ea5-4709-9b0d-0ab1193aa1f8
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 746e114b-8faf-4fa4-9540-5fac0dd428da:Sprites/Cactus
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    858e527c98cbdb30d0ebc2e55f7cd122: !DinoRemakes.Core.Components.PhysicsTagger,DinoRemakes
+                        Id: 11f316c8-5d6e-4e6f-8741-581ecf1f2fcd
+                        Tag: Obstacle
+                    a296bfaabe94477dc425898645ba78fe: !DinoRemakes.Core.Components.ObstacleParallaxAdapter,DinoRemakes
+                        Id: 375f7abe-760d-400d-bb74-0c1cc06cdb8a
+                        MoveSpeed: {X: -8.0, Y: 0.0, Z: 0.0}
+                        DestoryX: -20.0
+                    d6334a9a37f34742f33e60f0c8e3f0f7: !RigidbodyComponent
+                        Id: 7da9fbf5-9aaf-4764-a488-5b6687772f51
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: false
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            a8cab2d6bb755c999864d1f968b66149: !BoxColliderShapeDesc
+                                Is2D: true
+                                Size: {X: 1.0, Y: 2.1, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 1.05, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

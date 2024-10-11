@@ -11,13 +11,15 @@ Sprites:
         Source: !file ../../Resources/Sprites/cactus_1.png
         Name: cactus_1
         TextureRegion: {X: 0, Y: 0, Width: 70, Height: 144}
-        Center: {X: 0.0, Y: 0.0}
+        PixelsPerUnit: 66.666664
+        Center: {X: 0.0, Y: 70.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}
     b8b0f5eb87bd3551c6de72b20de830da:
         Source: !file ../../Resources/Sprites/cactus_2.png
         Name: cactus_2
-        TextureRegion: {X: 0, Y: 0, Width: 0, Height: 0}
-        Center: {X: 0.0, Y: 0.0}
+        TextureRegion: {X: 0, Y: 0, Width: 53, Height: 144}
+        PixelsPerUnit: 66.666664
+        Center: {X: -14.0, Y: 70.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}

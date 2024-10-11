@@ -9,10 +9,11 @@ Hierarchy:
         - ref!! ec5cab2c-2b62-47d5-94ac-480a701c0cba
         - ref!! 231e90e7-7804-43d0-b517-61ef06ca06ff
         - ref!! 9c004f91-981c-4fc8-a048-e4f1b4501637
+        - ref!! 95c52d70-7fdd-4c98-815d-120abaf00102
         - ref!! e6a59e58-40cf-4201-b32b-d35c6e18802a
         - ref!! fe71dfbf-8e67-4240-b950-1d22ca990b28
         - ref!! eb7f67f8-7aab-485b-826b-a876f23e9030
-        - ref!! 95c52d70-7fdd-4c98-815d-120abaf00102
+        - ref!! 198b63ba-b7ef-4212-8e4e-93bf578cde27
     Parts:
         -   Entity:
                 Id: 05628563-990f-4c11-a61a-3815753a873b
@@ -120,6 +121,25 @@ Hierarchy:
                 BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
                 BasePartId: d9e519fc-e237-46fb-ba5a-96faa5112583
                 InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
+        -   Entity:
+                Id: 198b63ba-b7ef-4212-8e4e-93bf578cde27
+                Name: ObstacleSpawner
+                Components:
+                    f66b16b6c989864ddea12c68c53d7851: !TransformComponent
+                        Id: da47ad1e-b3cc-4924-a541-8a3e4e8b0c9c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    23760a48a41a704d13b28bc72f726219: !DinoRemakes.Core.Components.ObstacleSpawner,DinoRemakes
+                        Id: 8b819c3d-4bfc-411c-b50d-c17c0ec4bbb0
+                        Cactuses:
+                            3a0b896521074c6a9e116372650198fd: 19917077-da69-4b66-b669-09f189bb0531:Prefabs/CactusWhole
+                            569e080932294565b0b9ae51272d1685: 5e3f4c77-4df6-4faf-85c7-f1088fbd2987:Prefabs/CactusHalf
+                        Flyman:
+                            3556a504db8f2e04a70a2111543de0ad: 438dcbcd-9b22-42b1-86c6-d682a5670375:Prefabs/Flyman
+                        CactusSpawnPosition: {X: 14.0, Y: -3.0, Z: 0.0}
+                        FlymanSpawnPosition: {X: 14.0, Y: 1.6, Z: 0.0}
         -   Entity:
                 Id: 231e90e7-7804-43d0-b517-61ef06ca06ff
                 Name: DebugBackground
@@ -522,6 +542,8 @@ Hierarchy:
                         Page: 0b7744ff-e8ca-4bfb-8a4c-5a838a5ee8c2:Prefabs/UI/GameOverWidget
                         Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    7f164d55fe6379c21b554d146c6533e1: !DinoRemakes.Core.Gui.GameOverWidget,DinoRemakes
+                        Id: e7257df6-4d24-4840-a4fd-c3f0bc8ee4f6
             Base:
                 BasePartAsset: f22af63c-1e50-4123-bfc3-7209350cf9d3:Prefabs/UI
                 BasePartId: 75274560-293f-4b40-b5c3-871e66c2bfd2

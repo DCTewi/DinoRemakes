@@ -1,7 +1,5 @@
 ﻿using Stride.Engine.Events;
 
-using System.Collections.Generic;
-
 namespace DinoRemakes.Core.Models
 {
     public static class Globals

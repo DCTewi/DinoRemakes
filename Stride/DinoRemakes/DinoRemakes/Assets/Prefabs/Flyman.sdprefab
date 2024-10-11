@@ -1,0 +1,59 @@
+!PrefabAsset
+Id: 438dcbcd-9b22-42b1-86c6-d682a5670375
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! beafb26f-9c8b-47b0-88e0-b47903c0557b
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: beafb26f-9c8b-47b0-88e0-b47903c0557b
+                Name: Flyman
+                Components:
+                    5d61425d52b972a36584688aed436d5a: !TransformComponent
+                        Id: 65195e19-038e-4a2c-8d5d-f8a2faab29b6
+                        Position: {X: 4.055751, Y: 1.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6b505be10e0493f5682649e80e222f5f: !SpriteComponent
+                        Id: 71e72979-692c-4654-85e8-0eb06beeed68
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: c509045c-32d6-4d8b-a25d-83dffffc81b8:Sprites/Flyman
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    858e527c98cbdb30d0ebc2e55f7cd122: !DinoRemakes.Core.Components.PhysicsTagger,DinoRemakes
+                        Id: b9c04267-5076-4255-ade1-3e03c196daf5
+                        Tag: Obstacle
+                    e13db34337f248cd9cc784a8103ba012: !DinoRemakes.Core.Components.SpriteAnimator,DinoRemakes
+                        Id: e89be6a8-938f-489d-a77b-8d9b44304c54
+                        Priority: -1
+                        Animations:
+                            ff2a3eda48da936aa99b2235c13ab441~fly: {X: 0, Y: 3}
+                        FPS: 10.0
+                    bf280f83df200628ce6c292dd54091fe: !DinoRemakes.Core.Components.ObstacleParallaxAdapter,DinoRemakes
+                        Id: e1b100cc-146e-49fa-96a7-6bb4a7631c4d
+                        MoveSpeed: {X: -8.0, Y: 0.0, Z: 0.0}
+                        DestoryX: -20.0
+                    7f9b195a35cd5ee5f4aae123988a2c03: !RigidbodyComponent
+                        Id: 2ba70b14-f867-4134-aa6e-bda1c8e4fe85
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: true
+                        IsKinematic: false
+                        Mass: 0.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            7a9a3a0159c4b65373117661d509eafe: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
