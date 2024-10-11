@@ -12,6 +12,7 @@ Hierarchy:
         - ref!! e6a59e58-40cf-4201-b32b-d35c6e18802a
         - ref!! fe71dfbf-8e67-4240-b950-1d22ca990b28
         - ref!! eb7f67f8-7aab-485b-826b-a876f23e9030
+        - ref!! 95c52d70-7fdd-4c98-815d-120abaf00102
     Parts:
         -   Entity:
                 Id: 05628563-990f-4c11-a61a-3815753a873b
@@ -24,12 +25,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 2.0}
                         Children: {}
                     ee35dddd8907649b1658920e811bf6a0: !SpriteComponent
-                        Id: 8883230c-4130-4ab0-b43b-ebcd7b8d6de4
+                        Id: 20885d69-49ad-41bf-85cc-57398d9ddde2
                         SpriteProvider: !SpriteFromTexture
                             Texture: 4d2d3182-8be2-4b2b-8ff3-7865669a7516:Sprites/Sky
                             PixelsPerUnit: 50.0
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 35be4aa9-3117-41c3-a67d-a97a3ade6e97
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: 0673f07b-b083-4f41-b15c-ec93dbd758eb
@@ -42,11 +47,32 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: 983cf47b-1f51-4c48-96b2-3eac9386e9d3
+                        Id: d0efcbe1-2c30-44f6-9928-d11d352c7d6a
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 1
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 641f7e38-1359-4c1b-b6ce-cb2b6d19d781
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
+        -   Entity:
+                Id: 089448d2-bc22-4257-ad90-13b0eb6efe15
+                Name: Score Widget
+                Components:
+                    f4f87ddc48080de03ae3c0fd09f3333c: !TransformComponent
+                        Id: bbfd401b-c136-4bef-8b80-b292d666decc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c2a7850b1ddafc4b99df1840bdc4b71e: !UIComponent
+                        Id: 0b00225d-5f2c-49f8-a523-c505a865e519
+                        Page: 69f8d16c-bfa8-416b-8516-74133dc9daa5:Prefabs/UI/Score Widget
+                        Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    5b52c9d00a5c3b5bb78f2c7a624b0f7e: !DinoRemakes.Core.Gui.ScoreWidget,DinoRemakes
+                        Id: b6f7a978-244a-4663-89c9-91c37a907b4b
         -   Folder: null
             Entity:
                 Id: 14190392-81b9-41e3-92da-345d86ba245d
@@ -59,11 +85,15 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: 680badc2-db7b-45cd-bda7-d2219dd393af
+                        Id: 66427381-6e80-43c5-b199-44f8772fbcb1
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 4
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 21627c86-c41a-4dca-a37e-190897aa9c43
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: 15a703f0-0961-4d94-8939-74838d0ce0ff
@@ -76,12 +106,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: ff65e4dd-ab81-430c-970d-137604fb3527
+                        Id: b1ff59f4-edd6-4ffe-b67e-1e207ab019e9
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 04ac57f7-adc0-405c-9bd3-3a419fc299f3
+                        Id: 9a101e7f-f56d-4244-8133-248d8e250ecf
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: d9e519fc-e237-46fb-ba5a-96faa5112583
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: 231e90e7-7804-43d0-b517-61ef06ca06ff
                 Name: DebugBackground
@@ -109,12 +143,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: bf1d6fc6-debf-4bc2-958a-b8c5480d39cb
+                        Id: aa26eee2-8aaa-4025-9d61-8f280045acb7
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 731f51fb-1492-4006-a0c2-5a67c266d92e
+                        Id: 99cdac0e-721b-4ced-ade7-6f75513e7541
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 289df850-d023-401f-9cf2-de216d5a7a87
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: 340f4658-ff27-4060-a076-0db1eeff6ed4
                 Name: Random Clouds Parallax
@@ -133,10 +171,14 @@ Hierarchy:
                             e80d4e3c1eefe0ff47562a05b806f065: ref!! b85bd539-d5d9-45d3-b96a-81b3aba421b8
                             eadb1d068883cc96f51c358134b769bf: ref!! 7f2a6be2-54bd-477e-9c2e-f56fa3bb7ae8
                     1d61a7836b888bb894de2fcbcf3dd018: !DinoRemakes.Core.Components.RandomParallaxAdapter,DinoRemakes
-                        Id: 0d9dffe9-5a4a-4ae3-9e50-76fab15435f6
+                        Id: 6535421d-fc0a-4f99-ae5a-26807218ea55
                         MoveSpeedRange: {X: -0.5, Y: -0.9}
                         ScaleRange: {X: 1.0, Y: 1.4}
                         MoveLength: 20.0
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: c6b4c95e-9a0f-4924-aabd-ff693a321664
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: 37bfe30e-98fc-4504-8a9a-c8a45d927093
@@ -149,12 +191,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: de930a42-246a-4e79-b588-3cb4604a5a52
+                        Id: 1b078059-e2ee-4ff2-b52f-4ebd1f8ead6f
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 15591b05-eac3-4f65-89d6-1eab32cf243a
+                        Id: a6b3e1e8-b749-4e2d-9761-4c40b52d4394
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: be7f3069-bfed-46b9-9fef-1981ff49e5c2
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Folder: null
             Entity:
                 Id: 401c9e96-ee94-4ac5-bae1-fcc6641066f2
@@ -167,11 +213,15 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: 615ce90e-32fb-40cd-b52f-2a7f87316018
+                        Id: e93e90cc-f1f5-4a84-becb-d64d4d89ac12
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 104a1c58-16a8-43a8-b97b-41e8c9b52893
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: 48880854-0e3c-4050-872b-bd86f423ff78
@@ -184,12 +234,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 0d61dc52-d547-41eb-9971-765842467fb8
+                        Id: df6021a1-31e2-42c4-987a-57c2033ddd22
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 1df73967-525d-42d1-bacb-a552390f0ec6
+                        Id: 7f7a905a-af6e-408c-aa8c-ca4ee8e7a1b9
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 54817c56-ea2d-4641-98ae-42f36de4b2e0
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: 668a9ecd-516d-4021-bdb9-21650c913927
                 Name: Grass
@@ -201,12 +255,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 4f874756-c88a-4fde-8bd7-354d3eea3fd5
+                        Id: f8dd9223-88e4-4863-b9e2-67d6b61bd0e6
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 04962bd1-d7e9-4df5-8499-a58d92f58194
+                        Id: ba53116b-06c1-45bd-b757-c580f54b4b45
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 81fd128c-c985-4a7f-bd6d-96bc134ea31c
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: 6b0da4bf-335e-4d59-8237-c2727c7ee5df
                 Name: Cloud Parallax
@@ -220,9 +278,13 @@ Hierarchy:
                             3d285c4b6c377bf1a0ada5d45aed991c: ref!! 84f50fcf-2364-459a-be4b-81b0f67c13be
                             a8cfe5154018f904ac214ec847493c69: ref!! 1cff8b95-a1ff-490e-8a41-aac5710c1a26
                     241fe164af33104d1aa1ce9c14c6da0d: !DinoRemakes.Core.Components.ParallaxAdapter,DinoRemakes
-                        Id: 216434a7-d260-4d45-a935-efc1125c9972
+                        Id: bed186cb-06c7-4f67-9293-39bdb908bc4f
                         MoveSpeed: -0.5
                         MoveLength: 20.0
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 6ae83c29-47af-44c6-966d-2a0931caddeb
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Entity:
                 Id: 740b38c5-94ce-4ab6-84b6-4b1fb5591717
                 Name: Clouds
@@ -234,12 +296,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5e5f02970964734b249f036bbdab3292: !SpriteComponent
-                        Id: 0f5e8036-6b66-4c79-91c4-37e2f8d9c466
+                        Id: e73a4e26-baca-43a0-a484-777541df6023
                         SpriteProvider: !SpriteFromTexture
-                            Texture: 70518d07-c179-4fbc-9269-e5dbd3e990eb:Sprites/clouds1
+                            Texture: 70518d07-c179-4fbc-9269-e5dbd3e990eb:Sprites/Clouds1
                             PixelsPerUnit: 50.0
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: bd321620-03e7-4606-81a3-b59020f0ec09
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Entity:
                 Id: 74103853-344e-40a4-9009-cf416441b20b
                 Name: Clouds
@@ -251,12 +317,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5e5f02970964734b249f036bbdab3292: !SpriteComponent
-                        Id: 6d701aa4-a080-4fff-82a0-0e8b0b5278ae
+                        Id: 36d99478-164d-4f3b-8c97-11c31f061cce
                         SpriteProvider: !SpriteFromTexture
-                            Texture: 70518d07-c179-4fbc-9269-e5dbd3e990eb:Sprites/clouds1
+                            Texture: 70518d07-c179-4fbc-9269-e5dbd3e990eb:Sprites/Clouds1
                             PixelsPerUnit: 50.0
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 0e1a8a65-41b2-4910-8c80-8ad03e4999c9
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: 78d0424a-b0ce-4846-9caa-675b166cbda7
@@ -269,11 +339,15 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: 71715749-3389-4d7d-9536-8c4164fb8024
+                        Id: d18cf6c5-f151-406c-b7b4-162f4a249215
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 3
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: ca6d7fe0-01fb-464b-a8c8-d0717a02b3d4
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: 806264e2-a9d7-4280-b05e-1d3a3d6a74fe
@@ -286,12 +360,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 2dda39c4-fbda-435a-83be-6fb9c504e85b
+                        Id: 9085d20a-dd1c-4d7c-bdf2-5d7031374d1d
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: b33cce59-a870-4f28-9a98-0ba1ce7ee0fe
+                        Id: f3090eb7-77fc-406b-b81b-f8f706e8462d
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 6d6a73fe-84e2-46b3-8160-53a124e1f4cb
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: 85890b85-5059-42db-8919-34bab7d5ef72
                 Name: Hills
@@ -303,11 +381,15 @@ Hierarchy:
                         Scale: {X: 2.0, Y: 2.0, Z: 2.0}
                         Children: {}
                     08eef44c47c0c5b9204169a296e3bc0a: !SpriteComponent
-                        Id: 8149a11a-07ac-420e-a911-726cab5bf4ac
+                        Id: df5a2d8e-6a63-42f3-bd6b-ae26e89e810e
                         SpriteProvider: !SpriteFromTexture
-                            Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/hills_1
+                            Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/Hills_1
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 509f6257-e1b4-4a3b-9b7f-5c94e808429d
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Entity:
                 Id: 8cd7c1f7-179b-409a-a234-89c8e9281fb0
                 Name: Ground Collider
@@ -319,7 +401,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     8b7fef3802ee77f55666e5b853442ec7: !StaticColliderComponent
-                        Id: 829f5882-2f00-4cf7-88e4-08dece8c5bb5
+                        Id: 915d8bd4-7892-4913-beb2-e09c60621c2f
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -332,6 +414,10 @@ Hierarchy:
                             226c940db5a3ba73a7fbb5a9a83861b2: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 4a621221-5c01-4344-bd25-052fef7065fa
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Folder: null
             Entity:
                 Id: 927b1c1a-074b-4c0e-a4f2-364c2dfe2980
@@ -344,11 +430,28 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: cfc0fff6-23dd-4eef-8666-91746597be5b
+                        Id: d97234ad-ff39-4f73-9ffc-e10b4d2bce97
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 1
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 7b63b05d-d837-49fa-8e3f-2b410e18b675
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
+        -   Entity:
+                Id: 95c52d70-7fdd-4c98-815d-120abaf00102
+                Name: UI
+                Components:
+                    88e11fe385193b55577a1b18e1b2e86d: !TransformComponent
+                        Id: 141b2f55-9823-486d-aed7-cdcf0caa2d5f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            85ee00d00e98cd20308d0e7e828ec827: ref!! bbfd401b-c136-4bef-8b80-b292d666decc
+                            f399cfb895a556dc08d92a2bd1f4e841: ref!! e30de1d0-cd11-40d0-9215-ef1c7b92345b
+                            371ac574daff90de7afb9390be87e69c: ref!! d19a0b5f-3da7-4807-a61e-c841974c46f6
         -   Folder: null
             Entity:
                 Id: 9a38297e-c60d-4de7-a507-677ba5f1ab62
@@ -361,12 +464,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 83363ccd-4f1e-429e-9858-68af5c57fe67
+                        Id: d8b1f0d0-e031-499b-98cd-abd0b620480a
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 85590c00-8708-4888-8384-d6ec88e4edcf
+                        Id: 2dadf526-a05e-4956-9ad2-beca86524f6a
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: e9af40b1-a0d8-43d4-9af4-fe6b39c07e0d
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: 9c004f91-981c-4fc8-a048-e4f1b4501637
                 Name: Camera
@@ -378,12 +485,32 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     3f90e274124d0066ed3d98163dc70127: !CameraComponent
-                        Id: 51486a7e-5d79-479f-b6a6-5502a6294001
+                        Id: c2164a79-97a4-4f77-84b7-c53a94273601
                         Name: Main
                         Projection: Orthographic
                         OrthographicSize: 11.0
                         NearClipPlane: 1.0
                         Slot: 2c65d75c-a6d6-40c0-900b-a883fe3cbbee
+            Base:
+                BasePartAsset: 3b459922-576d-4fda-ac2d-058609428621:Prefabs/Camera
+                BasePartId: 51023eb7-28b9-48db-a8a9-d0db178b7a7d
+                InstanceId: 7b44fe35-77f4-4a74-8fac-399d404d9a9d
+        -   Entity:
+                Id: a32116d3-e6d0-4ac9-a99c-21e426d5c889
+                Name: GameOverWidget
+                Components:
+                    9b9a4dac8f3a696591491c46f1ec30c3: !TransformComponent
+                        Id: d19a0b5f-3da7-4807-a61e-c841974c46f6
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c6d15c2e5b2ebc966a3ebd8ff47d2544: !UIComponent
+                        Id: 5613b71b-8c23-469a-97f4-70832b12a228
+                        Enabled: false
+                        Page: 0b7744ff-e8ca-4bfb-8a4c-5a838a5ee8c2:Prefabs/UI/GameOverWidget
+                        Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
         -   Folder: null
             Entity:
                 Id: aa7f0a9d-077f-4e2e-b9d6-6fd1b1a8d6b0
@@ -396,12 +523,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 6a5363ea-01a4-4320-baef-03feab11896d
+                        Id: 6e1b1f58-38c8-4949-a248-901b67af3bb6
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: b8785e61-f16d-45f1-a246-c5142133361b
+                        Id: 2b74b92c-d52c-4ac0-ac31-a21bf1fd2b2e
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 29bd6554-547a-4cac-9a8f-bd6fcdac6040
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Folder: null
             Entity:
                 Id: b371d53a-c773-488b-8a98-ce3c3e9714be
@@ -414,12 +545,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 06711d51-e477-44c9-b702-140a8b65f485
+                        Id: bcac2249-0fce-4049-8f6c-50ce5e31f819
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: d611406a-8f05-4926-998d-35152339ca03
+                        Id: c7dc9625-faa3-4b8a-9b1b-6aa0319657f9
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 3a520499-feec-4563-bf08-0a95d7584d79
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Folder: null
             Entity:
                 Id: c05a7988-df6c-4603-b33e-2ca0bfb1f9e9
@@ -432,12 +567,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 588236f1-90f7-4fe8-9303-9d7e89929e8c
+                        Id: 1f42f1fb-9b38-44ec-92bf-4f218a079f03
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: f266b7ec-0930-4065-bda2-ad3a42637d28
+                        Id: ca7c97ab-6d52-4c84-94b9-48e5e8a93b7b
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: b6c846bf-5bef-417a-b17d-8142e249c409
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: c3d13ddf-52bc-4e8c-9593-1924a473175b
                 Name: Clouds
@@ -449,10 +588,14 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: f4d7009e-789f-487c-9d33-6db905b464d6
+                        Id: c7b57416-d8d1-4b3c-b756-aa2abe032d23
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 5b4026d4-c8a5-4fac-928d-7237d5c77837
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: c5d2d97b-629d-4ace-b8f4-7d25a935fde7
@@ -467,9 +610,13 @@ Hierarchy:
                             2613c27153da45135341567771acd203: ref!! 55a68f0c-1d2e-434b-86e9-ecffdbfb1e6e
                             418cde51bdf00174c3d81b4633241285: ref!! 790cec01-2c7d-4f43-ab39-3194f563aa03
                     241fe164af33104d1aa1ce9c14c6da0d: !DinoRemakes.Core.Components.ParallaxAdapter,DinoRemakes
-                        Id: 19ecc351-0268-426b-b06c-d09c1fa0e625
+                        Id: 835106c7-2fc6-47fc-a95a-0de3df1b5639
                         MoveSpeed: -1.5
                         MoveLength: 20.0
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: 1eeb4488-cca4-43f4-8f4b-32ada88d545b
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: c70a454f-fae4-412d-ac95-1add87caad5a
@@ -482,12 +629,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 064135e5-2c21-4ea5-899c-39c10dbe0b51
+                        Id: 91e11e07-0767-4afa-90d4-4c8705903e1c
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: 74e759f8-8106-4182-9e8a-96b9ff0c6dde
+                        Id: 02ea9d21-2869-4f4f-b2c4-22d9cec2efff
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 68762bc4-49de-414f-8025-59bc3cc784d1
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: e15272d4-4246-447f-8396-8cbaff56b809
                 Name: TilemapRenderer
@@ -499,12 +650,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     f184cf85658680100993352763ae31e5: !DinoRemakes.Core.Components.TilemapRenderer,DinoRemakes
-                        Id: a3efbd18-372b-49ec-a9e3-59bccd7115d9
+                        Id: 1777bd5f-3f88-475a-9a1c-766eef66f41f
                         Tileset: f468303d-3c6c-4a8e-8472-6d18c78d4e57:Sprites/DirtTiles
                         Tilemap: 02893040-edcf-40fb-95b1-b528b76080c4:Tilemap/background
                         TileSize: {X: 1.0, Y: 1.0}
                         PixelPerUnit: {X: 70.0, Y: 70.0}
                         Anchor: {X: -30.0, Y: -0.5, Z: 0.0}
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: 2d5486d3-75ba-4e9a-a6a1-5b1e5f1248b7
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Folder: null
             Entity:
                 Id: e22df8bb-ed24-47b8-9af3-2eed08ab2537
@@ -517,11 +672,15 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5a5d581fd53ed0915a0acce8a9dc7190: !SpriteComponent
-                        Id: eba1b69d-9e46-4b36-964c-9dee2421c983
+                        Id: 6e659cd1-96c7-43d3-a0ff-660351534a2b
                         SpriteProvider: !SpriteFromSheet
                             Sheet: a6800aaa-8705-4597-8b64-1d3c3f3a397b:Sprites/Clouds
                             CurrentFrame: 2
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: d645554d-a168-4277-845f-c80d9f8afbcc
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Folder: null
             Entity:
                 Id: e6962d26-be61-4ddf-a392-ff60ac826e69
@@ -534,11 +693,15 @@ Hierarchy:
                         Scale: {X: 2.0, Y: 2.0, Z: 2.0}
                         Children: {}
                     08eef44c47c0c5b9204169a296e3bc0a: !SpriteComponent
-                        Id: addb4106-a707-4f8d-a711-9eba14a23469
+                        Id: c9b2a442-30e4-46eb-8070-723d2a23b642
                         SpriteProvider: !SpriteFromTexture
-                            Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/hills_1
+                            Texture: 4a53fd88-5a62-4a7d-b997-9902a56a3b9d:Sprites/Hills_1
                             Center: {X: 0.0, Y: 0.0}
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: f5edd31e-308a-4f22-ace3-0d449145b38f
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
         -   Entity:
                 Id: e6a59e58-40cf-4201-b32b-d35c6e18802a
                 Name: Background
@@ -553,6 +716,28 @@ Hierarchy:
                             edeaeb848ab8c3480cf5bc25acc68127: ref!! d8b15457-0fd5-46b5-9b68-abc2f7314c31
                             f3f30ec103d5f7f003a2f1a7c5820ec2: ref!! d5f1fbcf-097f-42ec-a861-70b68a348fe3
                             d83028a9dd10b899f1dde0b6ac645435: ref!! 5be480f1-994d-40bf-ba89-f07761a6b840
+            Base:
+                BasePartAsset: cd29b7f9-8a6b-41d4-a895-90629fc42802:Prefabs/Background
+                BasePartId: b253a333-f8e7-4b59-aa7b-1fc98760a242
+                InstanceId: 2e42a5ef-ba34-4290-9902-6b6ce3b51937
+        -   Entity:
+                Id: e8842ee2-32a4-479a-9f18-831486fb21af
+                Name: PauseWidget
+                Components:
+                    481a2d92e8aab94a88f46bfc55fc42c6: !TransformComponent
+                        Id: e30de1d0-cd11-40d0-9215-ef1c7b92345b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    70a6cef3592742714949750af960ae22: !UIComponent
+                        Id: a9eb19d9-0bb6-4f52-b4a0-25453d434721
+                        Enabled: false
+                        Page: 29165326-d605-4fd6-ab3a-3c07b75e9132:Prefabs/UI/PauseWidget
+                        Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    e877fc4ad9499319f84f1e70112d0726: !DinoRemakes.Core.Gui.PauseWidget,DinoRemakes
+                        Id: 35e7ef02-5228-4294-9a57-4a61b7db6a8e
         -   Entity:
                 Id: eb7f67f8-7aab-485b-826b-a876f23e9030
                 Name: Player
@@ -564,12 +749,12 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     96b5ade8a4b8e9443d16f8beca509e9a: !SpriteComponent
-                        Id: f66e0f1d-4932-4beb-870c-651eba095a04
+                        Id: b8c8ef24-acf2-490b-81a0-145b538fd5df
                         SpriteProvider: !SpriteFromSheet
                             Sheet: b78698e8-601e-4351-ae55-c32a0f82da5c:Sprites/Player
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     b0e1ba5f840be512c8a3bd513779b331: !CharacterComponent
-                        Id: 532e728a-d188-4e22-9b82-b8a983bc84da
+                        Id: 15a0cb12-5813-4067-85bc-a4ecd28a173f
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -587,7 +772,11 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     33aa6294130a43feb7584cbf5dd356f3: !DinoRemakes.Core.Components.PlayerController,DinoRemakes
-                        Id: 8c7d6735-c6cb-4ba3-9e9e-2bb6c5943ec8
+                        Id: 625d4223-fe2d-4644-9dc2-ae5f2904be7c
+            Base:
+                BasePartAsset: abe98284-e537-4e8d-a259-837fe261961d:Prefabs/Player
+                BasePartId: 717520a2-821b-473f-8309-93815366d37d
+                InstanceId: fce0a599-c139-42f5-88a2-d6ed3d68934a
         -   Entity:
                 Id: ec5cab2c-2b62-47d5-94ac-480a701c0cba
                 Name: GameManager
@@ -599,7 +788,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     5680ccf3fe8e9e2d45ecce99d5416993: !DinoRemakes.Core.Components.GameManager,DinoRemakes
-                        Id: 5d5c134c-7922-43cf-ae3b-cb4afd0bfc08
+                        Id: d0058b6e-031a-4d43-898b-f3cd31ddfafb
+            Base:
+                BasePartAsset: 903b6a81-4ef9-437f-bfde-3311e114cdb6:Prefabs/GameManager
+                BasePartId: ccd4aa1e-fcc1-4ffb-9d0f-2dc16a5c83ea
+                InstanceId: 1bc4c856-10f6-4afc-a9a0-bb2114dbfb23
         -   Folder: null
             Entity:
                 Id: fa6f7330-02a8-41ea-9c3f-86cc27cef36c
@@ -612,12 +805,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     6e6f321cd3c902b0ae10a8aa364ced21: !SpriteComponent
-                        Id: 3bc9cfc0-8773-4a68-8afd-57dd89ff67ae
+                        Id: 2815dc9d-470a-4a62-907c-92ac63ac957b
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 47f4857a-17db-464b-a656-c8a65269808f:Sprites/Grass
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     73b325db83376b093370b59e8de60687: !DinoRemakes.Core.Components.RandomSpritePicker,DinoRemakes
-                        Id: a524d5f6-af01-4268-ada9-1a20cad55ad2
+                        Id: c8ee0263-e24b-473b-bca2-4266f93b83b4
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: df6eacc0-c224-4739-8350-a4eb685ee452
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
                 Id: fe71dfbf-8e67-4240-b950-1d22ca990b28
                 Name: Foreground
@@ -643,6 +840,10 @@ Hierarchy:
                             8fe3452ed98281543bc093d96c325c8c: ref!! 81828fca-bc02-428f-82e5-af105737aea3
                             6bfd9368b48d86c0fed53645621b553c: ref!! e94fba97-9b6f-4496-965a-cf9927d38c96
                     6019e9c6a43338ccd215449939d265de: !DinoRemakes.Core.Components.ParallaxAdapter,DinoRemakes
-                        Id: ce3de34b-f9ae-4a92-aa64-f2be1c5019c9
+                        Id: 41dc603b-b38e-48e4-8333-2379ab0c3d68
                         MoveSpeed: -8.0
                         MoveLength: 20.0
+            Base:
+                BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
+                BasePartId: aff9b9d5-99a0-4be2-a851-bafabb306ebd
+                InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4

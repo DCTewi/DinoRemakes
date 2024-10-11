@@ -37,6 +37,11 @@ namespace DinoRemakes.Core.Components
 
         public override void Update()
         {
+            if (Globals.State.Paused)
+            {
+                return;
+            }
+
             var delta = Game.DeltaTime();
 
             Entity.GetChildren()

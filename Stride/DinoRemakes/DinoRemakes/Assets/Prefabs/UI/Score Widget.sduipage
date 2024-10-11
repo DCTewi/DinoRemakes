@@ -1,0 +1,52 @@
+!UIPageAsset
+Id: 69f8d16c-bfa8-416b-8516-74133dc9daa5
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Canvas ref!! c025a6ba-570e-4d2e-b389-a4a337e62a92
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 373dc59b-16b4-46f3-99f8-14919406a53f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 1000.0
+                Height: 73.0
+                Margin: {Left: 100.0, Top: 10.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: ScoreLabel
+                Text: "得分: {Globals.State.Sore}"
+                Font: 3bee2add-fc6a-4239-acef-b555309300d8:Fonts/Font-s1
+                TextSize: 60.0
+                TextColor: {R: 0, G: 0, B: 0, A: 255}
+        -   UIElement: !ImageElement
+                Id: 8337f1d8-f6d3-425a-9b4c-b0aa72e6f3a7
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 60.0
+                Height: 60.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 20.0, Top: 15.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: MedalImage
+                Source: !SpriteFromSheet
+                    Sheet: 55f367e7-3430-4962-b2c6-8b84bbba811e:Sprites/Medals
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !Canvas
+                Id: c025a6ba-570e-4d2e-b389-a4a337e62a92
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    c647a3d3f28ad5d65f45cff0da3431ae: !ImageElement ref!! 8337f1d8-f6d3-425a-9b4c-b0aa72e6f3a7
+                    59759ab256a07c0de109c4fd725b1257: !TextBlock ref!! 373dc59b-16b4-46f3-99f8-14919406a53f

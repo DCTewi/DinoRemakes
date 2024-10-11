@@ -1,0 +1,20 @@
+!PrefabAsset
+Id: 903b6a81-4ef9-437f-bfde-3311e114cdb6
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! ccd4aa1e-fcc1-4ffb-9d0f-2dc16a5c83ea
+    Parts:
+        -   Entity:
+                Id: ccd4aa1e-fcc1-4ffb-9d0f-2dc16a5c83ea
+                Name: GameManager
+                Components:
+                    9a9af3a494f672f53451b7c2896a9390: !TransformComponent
+                        Id: 9f58e6c5-831e-485f-87cf-2c1a19e5beb4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5680ccf3fe8e9e2d45ecce99d5416993: !DinoRemakes.Core.Components.GameManager,DinoRemakes
+                        Id: 599e160d-f048-49f3-8bc5-b90c87e3e6c8

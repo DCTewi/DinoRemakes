@@ -1,0 +1,43 @@
+!PrefabAsset
+Id: abe98284-e537-4e8d-a259-837fe261961d
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 717520a2-821b-473f-8309-93815366d37d
+    Parts:
+        -   Entity:
+                Id: 717520a2-821b-473f-8309-93815366d37d
+                Name: Player
+                Components:
+                    a75f2281eb93aa8854a47f2c04bd5d18: !TransformComponent
+                        Id: e7a5b9c1-6ec1-4bf7-b800-6995cfed684c
+                        Position: {X: -6.238469, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    96b5ade8a4b8e9443d16f8beca509e9a: !SpriteComponent
+                        Id: 54d95f3b-4a96-45ba-a39c-8d1ad67dafed
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: b78698e8-601e-4351-ae55-c32a0f82da5c:Sprites/Player
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    b0e1ba5f840be512c8a3bd513779b331: !CharacterComponent
+                        Id: 43c406fb-1d4e-4be5-ae64-dbfbb4d5a6f3
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 30.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 17.0
+                        Gravity: {X: 0.0, Y: -30.0, Z: 0.0}
+                        ColliderShapes:
+                            51c99bf174778ec62a8f47c1ff8e7064: !BoxColliderShapeDesc
+                                Is2D: true
+                                Size: {X: 1.6, Y: 1.2, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    33aa6294130a43feb7584cbf5dd356f3: !DinoRemakes.Core.Components.PlayerController,DinoRemakes
+                        Id: dc074691-f404-4a64-9095-b3004136661e

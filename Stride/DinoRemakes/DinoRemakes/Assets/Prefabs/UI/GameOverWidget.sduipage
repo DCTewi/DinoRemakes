@@ -1,0 +1,111 @@
+!UIPageAsset
+Id: 0b7744ff-e8ca-4bfb-8a4c-5a838a5ee8c2
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Canvas ref!! f21dd63c-f187-44e8-931c-14562c5fbd91
+    Parts:
+        -   UIElement: !Button
+                Id: 26391c9f-fe0d-416a-9821-6b61cade16a1
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 300.0
+                Height: 80.0
+                Margin: {Left: 810.0, Top: 700.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: RestartButton
+                Content: !TextBlock ref!! df5028be-0f93-4776-b686-74a907908aec
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
+                Id: 3bdbfa48-831a-4d0d-9594-9765b67bca68
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 1920.0
+                Height: 200.0
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {Top: 512.5}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: CurrentScoreLabel
+                Text: "本次得分: {Globals.State.Score}"
+                Font: 3bee2add-fc6a-4239-acef-b555309300d8:Fonts/Font-s1
+                TextSize: 36.0
+                TextColor: {R: 0, G: 0, B: 0, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 85cdf798-7223-49a3-95d5-13120f6a0e02
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 1920.0
+                Height: 200.0
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {Top: 360.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: '- Game Over -'
+                Font: 3bee2add-fc6a-4239-acef-b555309300d8:Fonts/Font-s1
+                TextSize: 128.0
+                TextColor: {R: 0, G: 0, B: 0, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: a9f11628-05fb-47df-b7ba-a8f716a573a2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 1920.0
+                Height: 200.0
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {Top: 562.5}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: BestScoreLabel
+                Text: "最高得分: {Saves.BestScore}"
+                Font: 3bee2add-fc6a-4239-acef-b555309300d8:Fonts/Font-s1
+                TextSize: 36.0
+                TextColor: {R: 0, G: 0, B: 0, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: df5028be-0f93-4776-b686-74a907908aec
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Restart
+                Font: f766e49e-7a58-4ef7-b6b1-a473da3f4dcc:Fonts/Font-s3
+                TextSize: 40.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Canvas
+                Id: f21dd63c-f187-44e8-931c-14562c5fbd91
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    c973ce9fdafd4dce6b2893e95c2acaa6: !TextBlock ref!! 85cdf798-7223-49a3-95d5-13120f6a0e02
+                    199f82a6b2851dfe68bbf2e4e851dfef: !TextBlock ref!! 3bdbfa48-831a-4d0d-9594-9765b67bca68
+                    b5af846d37bf6dd40bd89a2123268605: !TextBlock ref!! a9f11628-05fb-47df-b7ba-a8f716a573a2
+                    81290f70688e858c16ef7581dd8debb7: !Button ref!! 26391c9f-fe0d-416a-9821-6b61cade16a1

@@ -1,29 +1,28 @@
 !SpriteSheet
-Id: f3799eae-f4ce-4bda-aa3f-ca38248e0199
+Id: 55f367e7-3430-4962-b2c6-8b84bbba811e
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
 Type: Sprite2D
 ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-IsCompressed: false
 Packing: {}
 Sprites:
-    043c735b66a5bf507279a833302b49e3:
-        Source: !file ../../Resources/Sprites/medal_gold_1.png
-        Name: medal_gold_1
+    7842a9dcc914a8425cad426d75c9ceb1:
+        Source: !file ../../Resources/Sprites/medal_bronze_1.png
+        Name: medal_bronze_1
         TextureRegion: {X: 0, Y: 0, Width: 84, Height: 84}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}
-    95a2edd30c7d775b00d9cfe0d4fd18eb:
+    4b6832be2795d792094000d2a2a388d9:
         Source: !file ../../Resources/Sprites/medal_silver_1.png
         Name: medal_silver_1
         TextureRegion: {X: 0, Y: 0, Width: 84, Height: 84}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
         BorderColor: {R: 0, G: 0, B: 0, A: 0}
-    77715420120524e0cc92147979551fbb:
-        Source: !file ../../Resources/Sprites/medal_bronze_1.png
-        Name: medal_bronze_1
+    a4c0df79715dbb25bd183dc8c1de366d:
+        Source: !file ../../Resources/Sprites/medal_gold_1.png
+        Name: medal_gold_1
         TextureRegion: {X: 0, Y: 0, Width: 84, Height: 84}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}

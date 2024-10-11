@@ -1,0 +1,59 @@
+!UIPageAsset
+Id: 29165326-d605-4fd6-ab3a-3c07b75e9132
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Canvas ref!! 5d0bbb99-07e6-4f54-aeb4-de286a30bfb8
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 14907608-e33f-4419-9838-d2bf7dfdd676
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: PAUSE
+                Font: f766e49e-7a58-4ef7-b6b1-a473da3f4dcc:Fonts/Font-s3
+                TextSize: 200.0
+                TextColor: {R: 0, G: 0, B: 0, A: 255}
+        -   UIElement: !Canvas
+                Id: 5d0bbb99-07e6-4f54-aeb4-de286a30bfb8
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 1920.0
+                Height: 1080.0
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    0c4f7483a7b7da94455dd9b1010e107c: !Button ref!! fb03d08b-35b4-4850-a66b-9956e49af68f
+        -   UIElement: !Button
+                Id: fb03d08b-35b4-4850-a66b-9956e49af68f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 800.0
+                Height: 300.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 560.0, Top: 390.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: PauseButton
+                Content: !TextBlock ref!! 14907608-e33f-4419-9838-d2bf7dfdd676
+                PressedImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: null
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: null
