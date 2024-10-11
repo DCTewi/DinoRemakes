@@ -1,0 +1,72 @@
+!PrefabAsset
+Id: f22af63c-1e50-4123-bfc3-7209350cf9d3
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! e93f5a12-7d89-4ced-8fba-a89173a43a03
+    Parts:
+        -   Entity:
+                Id: 4273290d-d666-496f-a7be-49dda594444b
+                Name: Score Widget
+                Components:
+                    f4f87ddc48080de03ae3c0fd09f3333c: !TransformComponent
+                        Id: a754a7db-8fd7-4822-b94d-1066015bfd1e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c2a7850b1ddafc4b99df1840bdc4b71e: !UIComponent
+                        Id: 357c3bc1-9b38-4713-b248-5df098aa3969
+                        Page: 69f8d16c-bfa8-416b-8516-74133dc9daa5:Prefabs/UI/Score Widget
+                        Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    5b52c9d00a5c3b5bb78f2c7a624b0f7e: !DinoRemakes.Core.Gui.ScoreWidget,DinoRemakes
+                        Id: 3370f478-a15c-42fd-8c2d-46bc216cf34b
+        -   Entity:
+                Id: 75274560-293f-4b40-b5c3-871e66c2bfd2
+                Name: GameOverWidget
+                Components:
+                    9b9a4dac8f3a696591491c46f1ec30c3: !TransformComponent
+                        Id: d5a6e2db-50cf-4896-bc68-d40a44e014a3
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c6d15c2e5b2ebc966a3ebd8ff47d2544: !UIComponent
+                        Id: 83f316d8-6e53-422d-b885-0b1b6cad8fe0
+                        Enabled: false
+                        Page: 0b7744ff-e8ca-4bfb-8a4c-5a838a5ee8c2:Prefabs/UI/GameOverWidget
+                        Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+        -   Entity:
+                Id: b4f92365-b1e0-49e5-a814-ef03d105301b
+                Name: PauseWidget
+                Components:
+                    481a2d92e8aab94a88f46bfc55fc42c6: !TransformComponent
+                        Id: f327a9f5-d994-4f2d-8401-5190e8d702cf
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    70a6cef3592742714949750af960ae22: !UIComponent
+                        Id: c00b50bb-b804-4201-b136-907fb7810ee6
+                        Enabled: false
+                        Page: 29165326-d605-4fd6-ab3a-3c07b75e9132:Prefabs/UI/PauseWidget
+                        Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    e877fc4ad9499319f84f1e70112d0726: !DinoRemakes.Core.Gui.PauseWidget,DinoRemakes
+                        Id: 9db42473-7edb-43fb-98b0-0ffa92f9a6e5
+        -   Entity:
+                Id: e93f5a12-7d89-4ced-8fba-a89173a43a03
+                Name: UI
+                Components:
+                    88e11fe385193b55577a1b18e1b2e86d: !TransformComponent
+                        Id: 35256126-7ff9-4dbf-94b3-e59204a2bd69
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            85ee00d00e98cd20308d0e7e828ec827: ref!! a754a7db-8fd7-4822-b94d-1066015bfd1e
+                            f399cfb895a556dc08d92a2bd1f4e841: ref!! f327a9f5-d994-4f2d-8401-5190e8d702cf
+                            371ac574daff90de7afb9390be87e69c: ref!! d5a6e2db-50cf-4896-bc68-d40a44e014a3

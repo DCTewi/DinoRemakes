@@ -67,12 +67,16 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     c2a7850b1ddafc4b99df1840bdc4b71e: !UIComponent
-                        Id: 0b00225d-5f2c-49f8-a523-c505a865e519
+                        Id: bf6378e4-67c4-48c9-81eb-7ee36624e2d8
                         Page: 69f8d16c-bfa8-416b-8516-74133dc9daa5:Prefabs/UI/Score Widget
                         Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
                     5b52c9d00a5c3b5bb78f2c7a624b0f7e: !DinoRemakes.Core.Gui.ScoreWidget,DinoRemakes
-                        Id: b6f7a978-244a-4663-89c9-91c37a907b4b
+                        Id: 3bc8135c-a82f-4d9e-b938-594f5bc103fc
+            Base:
+                BasePartAsset: f22af63c-1e50-4123-bfc3-7209350cf9d3:Prefabs/UI
+                BasePartId: 4273290d-d666-496f-a7be-49dda594444b
+                InstanceId: 85a5e765-ce65-4947-8fca-54c5f1de78c1
         -   Folder: null
             Entity:
                 Id: 14190392-81b9-41e3-92da-345d86ba245d
@@ -414,6 +418,9 @@ Hierarchy:
                             226c940db5a3ba73a7fbb5a9a83861b2: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
+                    fae7fca84a93883bcf5987815bcafef8: !DinoRemakes.Core.Components.PhysicsTagger,DinoRemakes
+                        Id: de2439fb-ad19-4323-a6e5-9c4db19fb294
+                        Tag: Ground
             Base:
                 BasePartAsset: 88e8e83b-37b3-4235-8e5b-2ef7a38542d2:Prefabs/Foreground
                 BasePartId: 4a621221-5c01-4344-bd25-052fef7065fa
@@ -452,6 +459,10 @@ Hierarchy:
                             85ee00d00e98cd20308d0e7e828ec827: ref!! bbfd401b-c136-4bef-8b80-b292d666decc
                             f399cfb895a556dc08d92a2bd1f4e841: ref!! e30de1d0-cd11-40d0-9215-ef1c7b92345b
                             371ac574daff90de7afb9390be87e69c: ref!! d19a0b5f-3da7-4807-a61e-c841974c46f6
+            Base:
+                BasePartAsset: f22af63c-1e50-4123-bfc3-7209350cf9d3:Prefabs/UI
+                BasePartId: e93f5a12-7d89-4ced-8fba-a89173a43a03
+                InstanceId: 85a5e765-ce65-4947-8fca-54c5f1de78c1
         -   Folder: null
             Entity:
                 Id: 9a38297e-c60d-4de7-a507-677ba5f1ab62
@@ -506,11 +517,15 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     c6d15c2e5b2ebc966a3ebd8ff47d2544: !UIComponent
-                        Id: 5613b71b-8c23-469a-97f4-70832b12a228
+                        Id: b4c3b71a-2b6f-4be6-a5f8-305d6afb9c3c
                         Enabled: false
                         Page: 0b7744ff-e8ca-4bfb-8a4c-5a838a5ee8c2:Prefabs/UI/GameOverWidget
                         Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
+            Base:
+                BasePartAsset: f22af63c-1e50-4123-bfc3-7209350cf9d3:Prefabs/UI
+                BasePartId: 75274560-293f-4b40-b5c3-871e66c2bfd2
+                InstanceId: 85a5e765-ce65-4947-8fca-54c5f1de78c1
         -   Folder: null
             Entity:
                 Id: aa7f0a9d-077f-4e2e-b9d6-6fd1b1a8d6b0
@@ -731,20 +746,24 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     70a6cef3592742714949750af960ae22: !UIComponent
-                        Id: a9eb19d9-0bb6-4f52-b4a0-25453d434721
+                        Id: 72bd335f-769c-4b4f-8953-b932c0af3129
                         Enabled: false
                         Page: 29165326-d605-4fd6-ab3a-3c07b75e9132:Prefabs/UI/PauseWidget
                         Resolution: {X: 1920.0, Y: 1080.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
                     e877fc4ad9499319f84f1e70112d0726: !DinoRemakes.Core.Gui.PauseWidget,DinoRemakes
-                        Id: 35e7ef02-5228-4294-9a57-4a61b7db6a8e
+                        Id: a3d32715-6169-4dd8-b05b-4489ec4bbf45
+            Base:
+                BasePartAsset: f22af63c-1e50-4123-bfc3-7209350cf9d3:Prefabs/UI
+                BasePartId: b4f92365-b1e0-49e5-a814-ef03d105301b
+                InstanceId: 85a5e765-ce65-4947-8fca-54c5f1de78c1
         -   Entity:
                 Id: eb7f67f8-7aab-485b-826b-a876f23e9030
                 Name: Player
                 Components:
                     a75f2281eb93aa8854a47f2c04bd5d18: !TransformComponent
                         Id: a42e8277-828f-4525-b0b8-06cbf65d8d73
-                        Position: {X: -6.238469, Y: 0.0, Z: 0.0}
+                        Position*: {X: -6.0, Y: -2.3, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}

@@ -101,6 +101,9 @@ Hierarchy:
                             226c940db5a3ba73a7fbb5a9a83861b2: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
+                    fae7fca84a93883bcf5987815bcafef8: !DinoRemakes.Core.Components.PhysicsTagger,DinoRemakes
+                        Id: 4ac1ab74-3b7f-4918-b19c-fd782272e3ca
+                        Tag: Ground
         -   Folder: null
             Entity:
                 Id: 54817c56-ea2d-4641-98ae-42f36de4b2e0
