@@ -14,6 +14,8 @@ namespace DinoRemakes.Core.Gui
 
         private UIComponent _ui;
         private Button _restartButton;
+        private TextBlock _currentScoreLabel;
+        private TextBlock _bestScoreLabel;
 
         public override async Task Execute()
         {
@@ -22,9 +24,26 @@ namespace DinoRemakes.Core.Gui
             _restartButton = _ui.Page.RootElement.FindName("RestartButton") as Button;
             _restartButton.Click += OnRestartButtonClicked;
 
+            _currentScoreLabel = _ui.Page.RootElement.FindName("CurrentScoreLabel") as TextBlock;
+            _bestScoreLabel = _ui.Page.RootElement.FindName("BestScoreLabel") as TextBlock;
             while (Game.IsRunning)
             {
                 await _gameOverListener.ReceiveAsync();
+
+                var score = Globals.State.Score;
+                var save = Globals.Save;
+
+                if (score > save.BestScore)
+                {
+                    save.BestScore = score;
+                    Globals.Save = save;
+                }
+
+                var bestScore = save.BestScore;
+
+                _currentScoreLabel.Text = $"本次得分: {score}";
+                _bestScoreLabel.Text = $"最高得分: {bestScore}";
+
                 _ui.Enabled = true;
             }
         }

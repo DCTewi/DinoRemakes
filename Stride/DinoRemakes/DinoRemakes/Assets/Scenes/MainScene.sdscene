@@ -7,6 +7,7 @@ Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
         - ref!! ec5cab2c-2b62-47d5-94ac-480a701c0cba
+        - ref!! da79b0fe-0228-4d4a-9222-333b8c96b328
         - ref!! 231e90e7-7804-43d0-b517-61ef06ca06ff
         - ref!! 9c004f91-981c-4fc8-a048-e4f1b4501637
         - ref!! 95c52d70-7fdd-4c98-815d-120abaf00102
@@ -677,6 +678,19 @@ Hierarchy:
                 BasePartId: 68762bc4-49de-414f-8025-59bc3cc784d1
                 InstanceId: 8a7d8095-3504-46b5-9b89-b67a0db508d4
         -   Entity:
+                Id: da79b0fe-0228-4d4a-9222-333b8c96b328
+                Name: BackgroundMusicPlayer
+                Components:
+                    215623cd646d59553acdbc95aa45a79a: !TransformComponent
+                        Id: dd335faf-e988-490d-a817-7d8cbaa7c41d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9708ee5c5b000a5dedb50f41afb026db: !DinoRemakes.Core.Components.BackgroundMusicPlayer,DinoRemakes
+                        Id: 11643961-e4f9-446c-90b3-ee9b91634945
+                        BackgroundMusic: ad8af672-a085-4cd3-a3b2-0a9d5dcad50f:Audio/BGM/Calm_Currents
+        -   Entity:
                 Id: e15272d4-4246-447f-8396-8cbaff56b809
                 Name: TilemapRenderer
                 Components:
@@ -814,6 +828,14 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     33aa6294130a43feb7584cbf5dd356f3: !DinoRemakes.Core.Components.PlayerController,DinoRemakes
                         Id: 625d4223-fe2d-4644-9dc2-ae5f2904be7c
+                        JumpAudio: 16d0b728-0e1f-4441-99a2-3ebc47cd8fa1:Audio/SE/jump
+                    f08bff7ddd33c6fabc177062af47f1a7*: !DinoRemakes.Core.Components.SpriteAnimator,DinoRemakes
+                        Id: c4fe32e3-2b14-4c8e-9f98-51c017616db4
+                        Priority: -1
+                        Animations:
+                            4bd83390bd06480669e21dc7a3e4ce9b~drive: {X: 0, Y: 1}
+                            7a2a1bdf19e9134a2702b24d8b90b846~jump: {X: 2, Y: 2}
+                        FPS: 8.0
             Base:
                 BasePartAsset: abe98284-e537-4e8d-a259-837fe261961d:Prefabs/Player
                 BasePartId: 717520a2-821b-473f-8309-93815366d37d

@@ -30,7 +30,7 @@ namespace DinoRemakes.Core.Components
         public void Stop()
         {
             _paused = true;
-            if (Animations.TryGetValue(_currentAnimation, out var anim))
+            if (!Animations.TryGetValue(_currentAnimation, out var anim))
             {
                 anim = Int2.Zero;
             }
@@ -41,7 +41,7 @@ namespace DinoRemakes.Core.Components
         public void Play(string key)
         {
             _currentAnimation = key;
-            if (Animations.TryGetValue(_currentAnimation, out var anim))
+            if (!Animations.TryGetValue(_currentAnimation, out var anim))
             {
                 anim = Int2.Zero;
             }

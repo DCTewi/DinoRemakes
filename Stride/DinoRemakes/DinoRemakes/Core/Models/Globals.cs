@@ -6,6 +6,9 @@ namespace DinoRemakes.Core.Models
     {
         public static GameState State { get; set; } = new();
 
+        public static SaveData Save { get => _Save.Load(); set => _Save = value.Save(); }
+        private static SaveData _Save = new();
+
         public static readonly EventKey<bool> GamePausedEventKey = new("Game", "Paused");
         public static readonly EventKey GameOverEventKey = new("Game", "GameOver");
         public static readonly EventKey GameRestartEventKey = new("Game", "Restarted");
