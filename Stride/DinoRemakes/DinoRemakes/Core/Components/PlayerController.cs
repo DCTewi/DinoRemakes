@@ -21,7 +21,7 @@ namespace DinoRemakes.Core.Components
         private CharacterComponent _charactor;
         private SpriteAnimator _anim;
 
-        private bool _isOnFloor = false;
+        private bool _isOnFloor = true;
         private Vector3 _originPosition;
         public override void Start()
         {
