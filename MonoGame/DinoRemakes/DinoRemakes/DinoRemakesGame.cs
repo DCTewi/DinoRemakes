@@ -1,59 +1,63 @@
 ﻿using DinoRemakes.GameComponents;
-using DinoRemakes.SourceGenerator;
+using DinoRemakes.Scenes;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using System;
 using System.Collections.Generic;
 
 namespace DinoRemakes
 {
     public class DinoRemakesGame : Game
     {
-        private readonly GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        public static DinoRemakesGame Instance { get; private set; }
 
-        private readonly List<IGameComponent> _components = [];
+        public GraphicsDeviceManager Graphics { get; }
+        public SpriteBatch SpriteBatch => _spriteBatch;
+
+        private readonly List<IScene> _scenes = [];
+        private SpriteBatch _spriteBatch;
 
         public DinoRemakesGame()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            Instance = Instance == null ? this : throw new InvalidProgramException();
+
+            Graphics = new(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
 
         protected override void Initialize()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _spriteBatch = new(GraphicsDevice);
 
-            _components.Add(new SpriteRenderer(
-                ContentPath.Sprites.Sky_1,
-                Color.White,
-                new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight),
-                _spriteBatch));
+            _scenes.Add(new BackgroundScene());
 
-            _components.Add(new SpriteRenderer(
-                ContentPath.Sprites.Tile_dirt_1,
-                Color.White,
-                new Rectangle(100, 100, 70, 70),
-                _spriteBatch));
 
-            foreach (var component in _components)
+            foreach (var scene in _scenes)
             {
-                Components.Add(component);
+                foreach (var component in scene.Components)
+                {
+                    Components.Add(component);
+                }
             }
+
 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
-            foreach (var component in _components)
+            foreach (var scene in _scenes)
             {
-                if (component is ILoadable loadable)
+                foreach (var component in scene.Components)
                 {
-                    loadable.LoadContent(Content);
+                    if (component is ILoadable loadable)
+                    {
+                        loadable.LoadContent(Content);
+                    }
                 }
             }
         }
@@ -61,7 +65,9 @@ namespace DinoRemakes
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
                 Exit();
+            }
 
             base.Update(gameTime);
         }

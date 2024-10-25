@@ -6,7 +6,9 @@ using System;
 
 namespace DinoRemakes.GameComponents
 {
-    public class SpriteRenderer : IGameComponent, IDrawable, ILoadable
+    public class SpriteRenderer(
+        string path, Color color, Rectangle destRectange, SpriteBatch spriteBatch)
+        : IGameComponent, IDrawable, ILoadable
     {
         public event EventHandler<EventArgs> DrawOrderChanged;
 
@@ -16,37 +18,25 @@ namespace DinoRemakes.GameComponents
         public int DrawOrder { get; set; } = 0;
 
         private Texture2D _texture;
-        private readonly Color _color;
-        private readonly Rectangle _destRectange;
-        private readonly SpriteBatch _spriteBatch;
-        private readonly string _path;
 
-        public SpriteRenderer(string path, Color color, Rectangle destRectange, SpriteBatch spriteBatch)
-        {
-            _path = path;
-            _spriteBatch = spriteBatch;
-            _destRectange = destRectange;
-            _color = color;
-        }
-
-        public void Initialize()
-        {
-        }
+        public void Initialize() { }
 
         public void LoadContent(ContentManager content)
         {
-            _texture = content.Load<Texture2D>(_path);
+            _texture = content.Load<Texture2D>(path);
+            Console.WriteLine(_texture);
         }
 
         public void Draw(GameTime gameTime)
         {
             if (Visible)
             {
-                _spriteBatch.Begin();
+                spriteBatch.Begin();
 
-                _spriteBatch.Draw(_texture, _destRectange, _color);
+                Console.WriteLine(_texture);
+                spriteBatch.Draw(_texture, destRectange, color);
 
-                _spriteBatch.End();
+                spriteBatch.End();
             }
         }
     }
