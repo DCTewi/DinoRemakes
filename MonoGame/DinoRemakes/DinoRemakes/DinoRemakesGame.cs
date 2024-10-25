@@ -15,10 +15,9 @@ namespace DinoRemakes
         public static DinoRemakesGame Instance { get; private set; }
 
         public GraphicsDeviceManager Graphics { get; }
-        public SpriteBatch SpriteBatch => _spriteBatch;
+        public SpriteBatch SpriteBatch { get; private set; }
 
         private readonly List<IScene> _scenes = [];
-        private SpriteBatch _spriteBatch;
 
         public DinoRemakesGame()
         {
@@ -31,7 +30,7 @@ namespace DinoRemakes
 
         protected override void Initialize()
         {
-            _spriteBatch = new(GraphicsDevice);
+            SpriteBatch = new(GraphicsDevice);
 
             _scenes.Add(new BackgroundScene());
 

@@ -1,13 +1,8 @@
 ﻿using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Text;
 
-using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.IO;
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Text;
 
 namespace DinoRemakes.SourceGenerator;
@@ -89,18 +84,8 @@ public class ContentPathSourceGenerator : IIncrementalGenerator
 
     private static string ConvertPathToUpper(string path)
     {
-        if (string.IsNullOrEmpty(path))
-        {
-            return string.Empty;
-        }
-        if (!char.IsLetter(path[0]))
-        {
-            return $"_{path}";
-        }
-        if (char.IsLower(path[0]))
-        {
-            return $"{char.ToUpper(path[0])}{path.Substring(1)}";
-        }
-        return path;
+        return string.IsNullOrEmpty(path)
+            ? string.Empty
+            : !char.IsLetter(path[0]) ? $"_{path}" : char.IsLower(path[0]) ? $"{char.ToUpper(path[0])}{path.Substring(1)}" : path;
     }
 }
