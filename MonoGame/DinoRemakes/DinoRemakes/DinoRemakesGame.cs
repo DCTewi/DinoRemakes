@@ -30,6 +30,11 @@ namespace DinoRemakes
 
         protected override void Initialize()
         {
+            Graphics.IsFullScreen = false;
+            Graphics.PreferredBackBufferWidth = 1920;
+            Graphics.PreferredBackBufferHeight = 1080;
+            Graphics.ApplyChanges();
+
             SpriteBatch = new(GraphicsDevice);
 
             _scenes.Add(new BackgroundScene());

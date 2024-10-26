@@ -19,6 +19,20 @@ namespace DinoRemakes.Scenes
                     DinoRemakesGame.Instance.Graphics.PreferredBackBufferWidth,
                     DinoRemakesGame.Instance.Graphics.PreferredBackBufferHeight),
                 DinoRemakesGame.Instance.SpriteBatch),
+
+            new ParallaxedSprite(
+                ContentPath.Sprites.Clouds1,
+                new Vector2(0, 350),
+                DinoRemakesGame.Instance.SpriteBatch,
+                40,
+                2.0f),
+
+            new ParallaxedSprite(
+                ContentPath.Sprites.Hills_1,
+                new Vector2(0, 600),
+                DinoRemakesGame.Instance.SpriteBatch,
+                120,
+                2.0f),
         ];
     }
 }
