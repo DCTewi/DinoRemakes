@@ -38,7 +38,7 @@ namespace DinoRemakes
             SpriteBatch = new(GraphicsDevice);
 
             _scenes.Add(new BackgroundScene());
-
+            _scenes.Add(new GroundScene());
 
             foreach (var scene in _scenes)
             {
@@ -47,7 +47,6 @@ namespace DinoRemakes
                     Components.Add(component);
                 }
             }
-
 
             base.Initialize();
         }
