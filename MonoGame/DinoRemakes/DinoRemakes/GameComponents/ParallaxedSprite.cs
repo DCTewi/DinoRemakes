@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace DinoRemakes.GameComponents
 {
     public class ParallaxedSprite(
-        string path, Vector2 initPosition, SpriteBatch batch, float moveSpeed = 100, float scale = 1.0f, int gap = 0)
+        string path, Vector2 initPosition, SpriteBatch batch, float moveSpeed = 100, float scale = 1.0f, int gap = 0, int repeatHalfCount = 1)
         : IGameComponent, IDrawable, ILoadable, IUpdateable
     {
         public int DrawOrder { get; set; } = 0;
@@ -49,9 +49,17 @@ namespace DinoRemakes.GameComponents
             _texture = content.Load<Texture2D>(path);
             _width = _texture.Width * scale;
 
-            _positons.Add(initPosition with { X = initPosition.X - _width - gap });
+            for (int i = repeatHalfCount; i > 0; i--)
+            {
+                _positons.Add(initPosition with { X = initPosition.X - i * (_width + gap) });
+            }
+
             _positons.Add(initPosition);
-            _positons.Add(initPosition with { X = initPosition.X + _width + gap });
+
+            for (int i = repeatHalfCount; i > 0; i--)
+            {
+                _positons.Add(initPosition with { X = initPosition.X + i * (_width + gap) });
+            }
         }
 
         public void Update(GameTime gameTime)
@@ -66,7 +74,7 @@ namespace DinoRemakes.GameComponents
                 var p0 = _positons[0];
                 _positons.RemoveAt(0);
 
-                p0.X += (_width + gap) * 3.0f;
+                p0.X += (_width + gap) * ((2 * repeatHalfCount) + 1);
                 _positons.Add(p0);
             }
 
