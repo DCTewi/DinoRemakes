@@ -8,7 +8,8 @@ using System.Collections.Generic;
 namespace DinoRemakes.GameComponents
 {
     public class ParallaxedSprite(
-        string path, Vector2 initPosition, SpriteBatch batch, float moveSpeed = 100, float scale = 1.0f, int gap = 0, int repeatHalfCount = 1)
+        string path, Vector2 initPosition, SpriteBatch batch,
+        float moveSpeed = 100, float scale = 1.0f, int gap = 0, int repeatHalfCount = 1)
         : IGameComponent, IDrawable, ILoadable, IUpdateable
     {
         public int DrawOrder { get; set; } = 0;

@@ -48,13 +48,13 @@ namespace DinoRemakes.Scenes
             // small clouds
             for (int i = 1; i <= 5; ++i)
             {
-                var scale = (_random.NextSingle() * 0.5f) + 0.8f;
+                var scale = (_random.NextSingle() * 0.5f) + 0.9f;
 
                 Components.Add(new ParallaxedSprite(
                     path + i,
                     new Vector2(_random.Next(-500, 3840), _random.Next(-10, 220)),
                     DinoRemakesGame.Instance.SpriteBatch,
-                    60 * scale,
+                    55 * scale,
                     scale: scale,
                     gap: 1920));
             }
