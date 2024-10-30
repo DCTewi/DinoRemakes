@@ -1,0 +1,43 @@
+﻿{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/out/${presetName}/build/",
+      "installDir": "${sourceDir}/out/${presetName}/install/",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CONFIGURATION_TYPES": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    },
+    {
+      "name": "ninja",
+      "inherits": "base",
+      "generator": "Ninja"
+    },
+    {
+      "name": "makefile",
+      "inherits": "base",
+      "generator": "Unix Makefiles",
+      "vendor": {
+        "microsoft.com/VisualStudioSettings/CMake/1.0": {
+          "hostOS": [ "Linux" ]
+        }
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "ninja",
+      "configurePreset": "ninja",
+      "configuration": "Release"
+    },
+    {
+      "name": "makefile",
+      "configurePreset": "makefile",
+      "configuration": "Release"
+    }
+  ]
+}

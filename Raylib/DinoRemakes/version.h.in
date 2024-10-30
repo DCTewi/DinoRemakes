@@ -1,0 +1,4 @@
+﻿#define DINO_VERSION_MAJOR @DinoRemakes_VERSION_MAJOR@
+#define DINO_VERSION_MINOR @DinoRemakes_VERSION_MINOR@
+#define DINO_VERSION_PATCH @DinoRemakes_VERSION_PATCH@
+#define DINO_VERSION "@DinoRemakes_VERSION@"
