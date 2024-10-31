@@ -13,7 +13,7 @@ namespace dino
 		int run() noexcept;
 
 	private:
-		struct Private;
+		class Private;
 		std::shared_ptr<Private> _d{ nullptr };
 	};
 }

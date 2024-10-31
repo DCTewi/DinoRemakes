@@ -11,6 +11,9 @@ target_include_directories(DinoRemakes
 
 target_link_libraries(DinoRemakes
     PRIVATE
+    EnTT::EnTT
+    raylib
+    nlohmann_json::nlohmann_json
 )
 
 file(GLOB_RECURSE DinoRemakes_HEADERS CONFIGURE_DEPENDS "*.h**")
@@ -22,7 +25,7 @@ target_sources(DinoRemakes
     PRIVATE
     ${DinoRemakes_HEADERS}
     ${DinoRemakes_SOURCES}
-)
+ )
 
 install(TARGETS DinoRemakes
     RUNTIME DESTINATION "bin"

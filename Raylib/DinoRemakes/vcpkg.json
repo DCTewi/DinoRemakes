@@ -1,6 +1,7 @@
 {
   "dependencies": [
+    "entt",
     "raylib",
-    "entt"
+    "nlohmann-json"
   ]
 }
